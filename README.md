@@ -1,211 +1,369 @@
-# Rai — AI Shopping Concierge for Value-Conscious Shopping
+<div align="center">
 
-> "The next 100 million shoppers don't need more choices. They need confidence that every rupee they spend is worth it."
+# 🛍️ Rai
 
-Rai is a working MVP built for [Myntra HackerRamp]. It replaces an infinite product grid with a
-short, explained, confidence-ranked shortlist, and adds a lightweight social-confirmation step
-("Ask Someone") that lets a first-time shopper check with a trusted person before buying —
-without leaving the app.
+### Shop with confidence, not with 5,000 tabs open.
 
-This repo is a **real, runnable full-stack app**, not a static mockup: a Node/Express backend
-with a live LLM-backed scoring/explanation pipeline, and a React frontend that calls it over
-HTTP.
+**🤖 An AI Shopping Concierge for Bharat**
+
+Built for **Myntra HackerRamp 2026** · Theme: *Build What's Next — Myntra for Bharat*
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-rai--orpin.vercel.app-FF4D5E?style=for-the-badge&logo=vercel&logoColor=white)](https://rai-orpin.vercel.app)
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini%20API-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
+![Tailwind](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)
+
+</div>
 
 ---
 
-## Problem this solves
+### 🎯 The one-line pitch
 
-Bharat (Tier-2/Tier-3) shoppers are underserved on both ends of the funnel: many never open
-Myntra in the first place, and those who do are met with a shelf tuned for metro browsing
-habits — thousands of results ranked by popularity, with no help translating a vague need
-("something for Rakhi") into a confident purchase decision. Decision fatigue and a lack of
-first-purchase trust (fit, returns, delivery reliability) are bigger blockers here than pure
-product relevance.
+> The next 100 million online shoppers don't need more choices. They need confidence.
+> Rai turns a natural-language shopping request into a small, explainable, personalized shortlist — instead of 5,000 products ranked by popularity.
 
-## What Rai does differently
+<br/>
 
-1. **Intent-first entry** — the user describes their need in plain language ("Need something
-   for Rakhi under ₹1200"), not product-catalog vocabulary.
-2. **Two adaptive follow-up questions** instead of a filter panel.
-3. **ValueIQ Engine** — a transparent, explainable scoring formula that ranks products by
-   *likely purchase satisfaction* (price competitiveness, review-derived quality, occasion
-   match, return/COD trust, budget fit), not by clicks or popularity.
-4. **Confidence Shelf** — six ranked picks, each with a plain-language "why this is worth it"
-   explanation grounded in real signal (price delta, return rate, delivery time, review
-   synthesis).
-5. **Ask Someone** — a first-time buyer can share the shortlist with a trusted person and get a
-   reply inside the app, standing in for the household/friend-group decision-making that
-   first-time online shoppers often rely on in place of platform trust they haven't built up
-   yet.
+## 🎥 Demo
 
-## Architecture
+<div align="center">
+
+![Rai demo](./docs/demo.gif)
+
+*(Drop a screen recording at `docs/demo.gif` — this is the single highest-leverage thing you can add before judging.)*
+
+**👉 Try it live: [rai-orpin.vercel.app](https://rai-orpin.vercel.app)**
+
+</div>
+
+<br/>
+
+## 📖 Table of Contents
+
+- [The Problem](#-the-problem)
+- [Our Solution](#-our-solution)
+- [Why Rai?](#-why-rai)
+- [Features](#-features)
+- [Screenshots](#-screenshots)
+- [Architecture](#️-architecture)
+- [ValueIQ Engine](#-valueiq-engine)
+- [What Makes Rai Different](#-what-makes-rai-different)
+- [Impact](#-impact)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Getting Started](#-getting-started)
+- [Future Roadmap](#-future-roadmap)
+
+<br/>
+
+## 🚨 The Problem
+
+Today's online shopping journey for a first-time or occasional buyer looks like this:
 
 ```
-frontend (React + Vite)              backend (Node + Express)
-──────────────────────               ──────────────────────────
-Intent input                 ──POST /api/intent──►  extractIntent()
-                                                      → Claude (Anthropic API) or
-                                                        keyword-heuristic fallback
-
-Adaptive questions
-
-Confidence Shelf             ──POST /api/shortlist─►  1. getReviewFeatures() — reads a
-                                                          precomputed, CACHED per-product
-                                                          feature set (sentiment, durability,
-                                                          fit) mined by Claude (or heuristic
-                                                          fallback) ONCE, not per request
-                                                       2. rankCatalog() — scores every product
-                                                          with the TRAINED ValueIQ model
-                                                          (logistic regression, see below):
-                                                          fast, deterministic, no network call
-                                                       3. buildExplanation() — templates the
-                                                          model's own feature attributions
-                                                          into readable bullets (no LLM call)
-
-Ask Someone modal            ──POST /api/ask-someone► createShare() (in-memory store,
-                              ──GET  /api/ask-someone/:id  simulated reply after a short delay)
+🔍 Search hundreds of products
+        ↓
+📱 Browse endlessly
+        ↓
+⭐ Read conflicting reviews
+        ↓
+📞 Ask friends or family
+        ↓
+😕 Still unsure
 ```
 
-### The ValueIQ model — trained, not hand-set
+For **Tier-2 and Tier-3 shoppers** especially, the barrier to purchase was never catalog size — it's **uncertainty**. More listings don't solve that. They make it worse.
 
-Ranking is a **logistic regression model trained offline** (`backend/ml/train_model.py`), not a
-hand-picked weighted formula. Inference happens in pure JS at request time
-(`backend/src/services/valueIQModel.js`): `sigmoid(w · standardize(x) + b)`, where `w` and `b`
-are the actual coefficients learned during training (see `backend/src/data/valueiq_weights.json`).
+<br/>
 
-**Features the model uses:** `price_ratio`, `sentiment` (from review mining), `durability_flag`,
-`fit_flag`, `trust_score` (return rate + COD), `occasion_match`, `budget_fit`.
+## 💡 Our Solution
 
-**Training data — disclosed methodology:** we do not have access to real Myntra purchase-
-satisfaction labels. `train_model.py` generates a synthetic dataset (6,000 samples) with a
-deliberately nonlinear, noisy ground-truth relationship between these features and a "worth it"
-outcome, then trains a standard `sklearn` `LogisticRegression` on it. This is disclosed
-explicitly rather than presented as real-data performance — it stands in for the return/review/
-repurchase signals Myntra has at scale but that weren't available for this MVP. Current model
-performance on a held-out synthetic test set: **AUC 0.77, accuracy 71%, Brier score 0.20** (see
-`backend/ml/valueiq_weights.json` → `metrics`, also exposed live at `GET /api/model-info`).
+```
+💬 Describe what you need
+        ↓
+🧠 AI understands intent
+        ↓
+📊 Personalized ranking
+        ↓
+💡 Explainable recommendations
+        ↓
+🛍️ Buy confidently
+```
 
-**Why this design, not a bigger black-box model:** logistic regression keeps every prediction
-linearly decomposable into per-feature contributions, which is what directly powers the "why
-this scored X" explanation panel (`backend/src/services/explanationAssembly.js`) — the
-explanation is guaranteed to match what the model actually computed, with no separate
-LLM call (and no hallucination risk) needed at explanation time.
+Type a request the way you'd text a friend — *"Need something for Rakhi under ₹1500"* — and Rai hands back a handful of picks, each with a plain-English reason it made the cut.
 
-**Why the LLM is decoupled from scoring:** review mining (`backend/src/services/reviewFeatures.js`)
-runs once per product and is cached to disk (`review_features_cache.json`), not once per
-request. This is what makes `/api/shortlist` fast and fully deterministic — repeated calls with
-the same intent return identical rankings, and scoring 40 products costs a handful of JS dot
-products, not 40 sequential LLM calls. Regenerate the cache after editing the catalog:
+<br/>
+
+## 🚀 Why Rai?
+
+| Traditional Shopping | Rai |
+|---|---|
+| Endless scrolling | Intent-first experience |
+| Popularity ranking | ValueIQ ranking |
+| Generic recommendations | Personalized recommendations |
+| Black-box algorithms | Explainable AI |
+| English-first | Multilingual |
+| Browse thousands | Curated shortlist of 6 |
+
+<br/>
+
+## ✨ Features
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🧠 AI Intent Understanding
+Understands natural language like *"Need something for Rakhi under ₹1500"* and extracts occasion, budget, product type, priority, state, and language — no filter forms.
+
+</td>
+<td width="50%" valign="top">
+
+### 💬 Adaptive Conversation
+Rai only asks what it couldn't confidently infer — usually just budget, priority, or state. No 12-field filter panel.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 📊 ValueIQ Recommendation Engine
+Scores every product on value, quality, reviews, seller trust, occasion match, and regional relevance — not clicks or sponsorship.
+
+</td>
+<td width="50%" valign="top">
+
+### 🎯 Context-Aware Personalization
+Budget filtering, occasion-aware ranking, product type matching, and diversity selection replace generic popularity sorting.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🇮🇳 Regional Personalization
+Adapts to state, festivals, traditional styles, regional colors, and preferred fabrics — Bharat isn't one shopper.
+
+</td>
+<td width="50%" valign="top">
+
+### 🌐 Multilingual Experience
+Detects query language, understands multilingual input, and localizes the entire interface.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 💡 Explainable AI
+Every pick comes with why-it-was-chosen, review highlights, a full ValueIQ breakdown, and regional reasoning. No black boxes.
+
+</td>
+<td width="50%" valign="top">
+
+### ❤️ Similar Products
+Every product page suggests close alternatives, making exploration easy without re-overwhelming the shopper.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🤝 Ask Someone
+Shopping is social. Share a recommendation with family or friends before buying, right inside the app.
+
+</td>
+<td width="50%" valign="top">
+
+### ⚡ Six, Not Five Thousand
+No infinite scroll. A capped, ranked shortlist every time — decision fatigue by design isn't a feature.
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+## 📸 Screenshots
+
+| Landing Page | Recommendation Shelf |
+|---|---|
+| ![Landing](./docs/screenshots/landing.png) | ![Shelf](./docs/screenshots/shelf.png) |
+
+| Product Details | ValueIQ Breakdown |
+|---|---|
+| ![Product Details](./docs/screenshots/product-detail.png) | ![Breakdown](./docs/screenshots/valueiq-breakdown.png) |
+
+| Ask Someone |
+|---|
+| ![Ask Someone](./docs/screenshots/ask-someone.png) |
+
+*(Add PNGs at the paths above — `docs/screenshots/`. Real screenshots here matter as much as the demo GIF for judging.)*
+
+<br/>
+
+## 🏗️ Architecture
+
+```
+                    User Query
+                        │
+                        ▼
+              Intent Extraction (Gemini)
+                        │
+                        ▼
+                Adaptive Questions
+                        │
+                        ▼
+                  ValueIQ Engine
+                        │
+        ┌───────────────┼───────────────┐
+        ▼               ▼               ▼
+  Budget Filter   Occasion Engine   Regional Engine
+        │               │               │
+        └───────────────┼───────────────┘
+                        ▼
+                Diversity Selection
+                        │
+                        ▼
+                 Explainable AI
+                        │
+                        ▼
+        Top 6 Personalized Recommendations
+```
+
+<br/>
+
+## 📈 ValueIQ Engine
+
+ValueIQ is Rai's recommendation engine — a trained logistic regression model that combines six signals into one transparent score:
+
+```
+                    Worth It Score
+                         │
+        ┌───────┬────────┼────────┬───────┬────────┐
+        ▼       ▼        ▼        ▼       ▼        ▼
+     💰 Value  ⭐ Quality 📝 Reviews 🏪 Seller 🎯 Occasion 📍 Region
+```
+
+No single signal decides the score, and every one of them is shown to the shopper — not just the final number.
+
+<br/>
+
+## 🧠 What Makes Rai Different?
+
+Unlike traditional shopping assistants, Rai deliberately separates:
+
+- ✔️ **AI** — for understanding intent (Gemini)
+- ✔️ **Deterministic scoring** — for the actual recommendation (ValueIQ)
+
+That split means every recommendation is **explainable, reproducible, and trustworthy** — the model doesn't hallucinate a ranking, it computes one, and shows its work.
+
+<br/>
+
+## 📈 Impact
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### For Shoppers
+- ✅ Less decision fatigue
+- ✅ Better confidence before purchase
+- ✅ Genuinely personalized shopping
+- ✅ Regional relevance, not one-size-fits-India
+
+</td>
+<td width="50%" valign="top">
+
+### For Myntra
+- ✅ Higher conversion
+- ✅ Lower cart/decision abandonment
+- ✅ Stronger shopper trust
+- ✅ A real on-ramp for Bharat adoption
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+## 🛠 Tech Stack
+
+| Frontend | Backend | AI | ML / Personalization |
+|---|---|---|---|
+| React | Node.js | Gemini API | Logistic Regression (ValueIQ) |
+| TypeScript | Express | LLM Intent Extraction | Occasion Engine |
+| TanStack Router | REST API | | Regional Engine |
+| Tailwind CSS | | | Budget Filtering |
+| Vite | | | Diversity Selection |
+
+<br/>
+
+## 📂 Project Structure
+
+```
+backend/
+ ├── ml/          # ValueIQ logistic regression model
+ ├── services/    # Intent extraction, scoring, personalization
+ ├── routes/      # /intent, /shortlist, /ask-someone, /health
+ └── data/
+
+frontend/
+ ├── routes/      # Pages (landing, shelf, product detail)
+ ├── components/  # ProductCard, ValueIQ breakdown, etc.
+ ├── lib/         # API client
+ └── styles/
+```
+
+<br/>
+
+## 🚀 Getting Started
+
+**Live demo:** [rai-orpin.vercel.app](https://rai-orpin.vercel.app) — no setup needed to try it.
+
+To run locally:
+
 ```bash
-node src/services/reviewFeatures.js
-```
-
-### Fallback mode
-
-If `ANTHROPIC_API_KEY` is not set, `backend/src/services/llm.js` and
-`backend/src/services/reviewFeatures.js` fall back to deterministic keyword/heuristic logic, so
-the app — including the trained ValueIQ model, which never depends on a live LLM call — runs
-end-to-end for anyone cloning the repo without credentials. The frontend shows a small
-"● Live LLM" / "● Heuristic review-mining" indicator alongside the model's AUC.
-
-## Tech stack & third-party dependencies
-
-| Layer | Choice | License |
-|---|---|---|
-| Backend runtime | Node.js 18+, Express 4 | MIT |
-| HTTP/CORS | `cors` | MIT |
-| Env config | `dotenv` | BSD-2-Clause |
-| Frontend | React 18, Vite 5 | MIT |
-| Icons | `lucide-react` | ISC |
-| LLM | Anthropic Messages API (`claude-sonnet-4-6`), called directly via `fetch` — no SDK dependency | Anthropic API Terms apply to usage, not to this codebase |
-
-No other third-party services, scrapers, or proprietary datasets are used. Product data in
-`backend/src/data/catalog.json` is a small hand-authored seed set (6 items) for demo purposes,
-not scraped from Myntra or any live platform.
-
-All first-party code in this repository is released under the MIT License — see [`LICENSE`](./LICENSE).
-
-## Setup
-
-### Prerequisites
-- Node.js 18+
-- (Optional) an Anthropic API key for live LLM calls — https://console.anthropic.com
-
-### Backend
-
-```bash
+# Backend
 cd backend
 npm install
-cp .env.example .env
-# Optionally add your ANTHROPIC_API_KEY to .env — the app runs without one, in fallback mode
 npm run dev
-```
-Backend runs on `http://localhost:4000`.
 
-### Frontend
-
-```bash
+# Frontend (in a new terminal)
 cd frontend
 npm install
 npm run dev
 ```
-Frontend runs on `http://localhost:5173` and proxies `/api/*` to the backend.
 
-Open `http://localhost:5173` in a browser.
+<br/>
 
-## Demo flow
+## 🔮 Future Roadmap
 
-1. Type "Need something for Rakhi under ₹1200" (or tap a suggestion chip).
-2. Answer two quick questions (priority, timing).
-3. View the 6-item Confidence Shelf, ranked by ValueIQ score.
-4. Open a product to see the full score breakdown and the "why this is worth it" explanation.
-5. Tap "Ask someone" → "Send to Didi" → watch the simulated reply arrive.
+- 🎙️ Voice-first shopping
+- 📦 Delivery confidence prediction
+- 📏 Size & fit recommendations
+- 🧠 Fashion memory across sessions
+- 👗 Creator-driven recommendations
+- 💬 WhatsApp integration
+- 📈 Seller insights dashboard
 
-## What's intentionally out of scope for this MVP
+<br/>
 
-- Real product catalog / live Myntra inventory integration
-- Real messaging provider for "Ask Someone" (currently simulated server-side)
-- User accounts, persistent order history, payments
-- Vernacular/regional-language input parsing beyond what the LLM handles natively
+---
 
-These are natural next steps, not required to demonstrate the core thesis end-to-end.
+<div align="center">
 
-## Project structure
+### ❤️ Built for Myntra HackerRamp 2026
 
-```
-rai-mvp/
-├── backend/
-│   ├── server.js
-│   ├── ml/
-│   │   ├── train_model.py            # trains the ValueIQ logistic regression model
-│   │   ├── generate_catalog.py       # expands the seed catalog for demo variety
-│   │   └── valueiq_weights.json      # training output (copied into src/data/)
-│   ├── src/
-│   │   ├── routes/api.js
-│   │   ├── services/valueIQModel.js       # trained-model inference (JS, deterministic)
-│   │   ├── services/reviewFeatures.js     # cached, decoupled review mining
-│   │   ├── services/explanationAssembly.js # templates model attributions into bullets
-│   │   ├── services/llm.js                # Anthropic API wrapper + intent extraction
-│   │   ├── services/askSomeone.js         # share/reply simulation
-│   │   └── data/
-│   │       ├── catalog.json               # 40-product seed catalog
-│   │       ├── valueiq_weights.json       # trained model coefficients
-│   │       └── review_features_cache.json # cached per-product review features
-│   └── .env.example
-├── frontend/
-│   └── src/
-│       ├── App.jsx
-│       └── api.js
-└── README.md
-```
+**Theme:** Build What's Next — Myntra for Bharat
 
-## Retraining the model
+Rai helps Bharat's next 100 million shoppers buy with confidence — through AI-powered, personalized, and explainable recommendations, instead of endless choice.
 
-```bash
-cd backend/ml
-python3 train_model.py            # retrains on synthetic data, writes valueiq_weights.json
-cp valueiq_weights.json ../src/data/valueiq_weights.json
-cd ..
-node src/services/reviewFeatures.js   # rebuild the review-feature cache if the catalog changed
-```
-Requires `scikit-learn`, `numpy`, and `pandas` (`pip install scikit-learn numpy pandas`).
+**[rai-orpin.vercel.app](https://rai-orpin.vercel.app)**
+
+</div>
