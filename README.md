@@ -177,8 +177,6 @@ No infinite scroll. A capped, ranked shortlist every time — decision fatigue b
 
 ## 📸 Screenshots
 
-## 📸 Screenshots
-
 <div align="center">
 
 ### 🏠 Landing Page
