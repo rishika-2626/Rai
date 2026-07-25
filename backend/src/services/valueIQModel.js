@@ -417,20 +417,23 @@ const MIN_CANDIDATES_AFTER_FILTER = 3;
  */
 function filterByProductType(candidates, productType) {
   if (!productType) return candidates;
-  const target = String(productType).trim().toLowerCase();
-  if (!target) return candidates;
 
-  const exactTypeMatch = candidates.filter(
-    (product) => String(product?.productType ?? "").trim().toLowerCase() === target
-  );
-  if (exactTypeMatch.length > 0) return exactTypeMatch;
+  const target = productType.trim().toLowerCase();
 
-  const categoryMatch = candidates.filter(
-    (product) => String(product?.category ?? "").trim().toLowerCase() === target
-  );
-  if (categoryMatch.length > 0) return categoryMatch;
+  const matched = candidates.filter((product) => {
+    const searchableText = [
+      product.productType,
+      product.category,
+      product.name,
+    ]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
 
-  return candidates;
+    return searchableText.includes(target);
+  });
+
+  return matched.length ? matched : candidates;
 }
 
 /**

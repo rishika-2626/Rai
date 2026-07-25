@@ -69,6 +69,7 @@ const intent = {
     productType,
     state,
 };
+console.log("Intent:", intent);
   try {
     const reviewFeaturesById = getReviewFeatures();
    const ranked = rankCatalog(catalog, intent, reviewFeaturesById);
