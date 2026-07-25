@@ -1,0 +1,50 @@
+{
+  "feature_names": [
+    "price_ratio",
+    "sentiment",
+    "durability_flag",
+    "fit_flag",
+    "trust_score",
+    "occasion_match",
+    "budget_fit"
+  ],
+  "coefficients": [
+    0.48470879582472914,
+    0.5969225547365046,
+    0.40071162671514465,
+    0.3581282116300014,
+    0.4181616607143424,
+    0.3988629177450979,
+    0.1542558215518215
+  ],
+  "intercept": 0.08492424393885871,
+  "standardization": {
+    "mean": [
+      0.24914980815310794,
+      0.7154311138140698,
+      0.5525,
+      0.586875,
+      0.633200737026557,
+      0.7131250000000171,
+      0.6695044319045662
+    ],
+    "std": [
+      0.19993391507580335,
+      0.1588002954125915,
+      0.4972361109171348,
+      0.49239489677999615,
+      0.19428459715547028,
+      0.3043685830945766,
+      0.17611618975352544
+    ]
+  },
+  "metrics": {
+    "auc": 0.7685,
+    "accuracy": 0.71,
+    "brier_score": 0.1957,
+    "n_train": 4800,
+    "n_test": 1200,
+    "positive_rate": 0.5192
+  },
+  "methodology": "Logistic regression trained on a synthetic dataset of 6000 samples with a nonlinear, noisy ground-truth relationship (see train_model.py). This is disclosed as synthetic training data, standing in for real Myntra return/review/repurchase signals which were not available for this MVP. The coefficients below are the actual learned weights used at inference time -- not hand-picked."
+}

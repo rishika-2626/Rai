@@ -1,0 +1,98 @@
+{
+  "office": {
+    "categories": [
+      "Shirts",
+      "Formal Shirts",
+      "Trousers",
+      "Blazers",
+      "Formal Shoes"
+    ],
+    "preferredColors": [
+      "Black",
+      "White",
+      "Grey",
+      "Navy",
+      "Blue"
+    ],
+    "preferredFabrics": [
+      "Cotton",
+      "Linen"
+    ]
+  },
+
+  "college": {
+    "categories": [
+      "T-Shirts",
+      "Jeans",
+      "Sneakers",
+      "Backpacks",
+      "Hoodies"
+    ],
+    "preferredColors": [
+      "Black",
+      "White",
+      "Blue"
+    ],
+    "preferredFabrics": [
+      "Cotton",
+      "Denim"
+    ]
+  },
+
+  "festival": {
+    "categories": [
+      "Kurta",
+      "Kurta Sets",
+      "Sarees",
+      "Lehenga",
+      "Ethnic Wear"
+    ],
+    "preferredColors": [
+      "Red",
+      "Gold",
+      "Yellow",
+      "Green",
+      "Maroon"
+    ],
+    "preferredFabrics": [
+      "Silk",
+      "Cotton Silk"
+    ]
+  },
+
+  "wedding": {
+    "categories": [
+      "Sherwani",
+      "Lehenga",
+      "Sarees",
+      "Ethnic Wear",
+      "Heels"
+    ],
+    "preferredColors": [
+      "Gold",
+      "Maroon",
+      "Red"
+    ],
+    "preferredFabrics": [
+      "Silk",
+      "Velvet"
+    ]
+  },
+
+  "daily": {
+    "categories": [
+      "T-Shirts",
+      "Jeans",
+      "Shirts",
+      "Casual Shoes"
+    ],
+    "preferredColors": [
+      "Black",
+      "White",
+      "Grey"
+    ],
+    "preferredFabrics": [
+      "Cotton"
+    ]
+  }
+}

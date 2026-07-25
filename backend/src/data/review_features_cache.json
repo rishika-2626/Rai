@@ -1,0 +1,5616 @@
+{
+  "f0001-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Decent for the price, does the job for formal.",
+    "source": "fallback-heuristic"
+  },
+  "f0001-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The Allen Solly quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0002-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "The Highlander quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0002-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Sizing felt off compared to other Highlander pieces I've bought before.",
+    "source": "fallback-heuristic"
+  },
+  "f0003-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0004-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Stitching came loose near the seams within a couple of weeks.",
+    "source": "fallback-heuristic"
+  },
+  "f0004-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Sizing felt off compared to other Skechers pieces I've bought before.",
+    "source": "fallback-heuristic"
+  },
+  "f0004-v3": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0004-v4": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0005-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Decent for the price, does the job for party.",
+    "source": "fallback-heuristic"
+  },
+  "f0005-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0006-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Good quality polyester blend, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0006-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0006-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Decent for the price, does the job for office.",
+    "source": "fallback-heuristic"
+  },
+  "f0006-v4": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0007-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Good quality cotton, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0007-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0008-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for wedding, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0009-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Decent for the price, does the job for gym.",
+    "source": "fallback-heuristic"
+  },
+  "f0009-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0009-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Runs slightly small, sizing up would be better.",
+    "source": "fallback-heuristic"
+  },
+  "f0010-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0010-v2": {
+    "sentiment": 0.5,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Sizing felt off compared to other W pieces I've bought before.",
+    "source": "fallback-heuristic"
+  },
+  "f0011-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0012-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0012-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for office, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0012-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0013-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "The cotton blend fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0013-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0014-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0014-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0015-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Perfect for casual, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0015-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Would definitely recommend for casual wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0016-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0016-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0016-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Would definitely recommend for casual wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0017-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Good quality cotton, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0017-v2": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0018-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Good quality denim, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0018-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Good quality denim, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0018-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Would definitely recommend for casual wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0018-v4": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Not quite what the photos showed -- expected better denim quality.",
+    "source": "fallback-heuristic"
+  },
+  "f0019-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0020-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0020-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for festival wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0021-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0022-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0022-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0022-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0022-v4": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0023-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "The Roadster quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0023-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly small, sizing up would be better.",
+    "source": "fallback-heuristic"
+  },
+  "f0023-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0024-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "The W quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0024-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0024-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0025-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Good quality denim, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0025-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Decent for the price, does the job for travel.",
+    "source": "fallback-heuristic"
+  },
+  "f0026-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0026-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The synthetic fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0026-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0027-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Perfect for casual, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0027-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for casual, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0027-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The rayon fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0028-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The rayon fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0028-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Good quality rayon, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0028-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0028-v4": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Decent for the price, does the job for party.",
+    "source": "fallback-heuristic"
+  },
+  "f0029-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0029-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0030-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0030-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for formal wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0030-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0030-v4": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0031-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0031-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Good quality cotton, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0032-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0032-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0033-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Started showing wear after just a few washes.",
+    "source": "fallback-heuristic"
+  },
+  "f0033-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Good quality fleece, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0034-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0034-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0034-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0034-v4": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for formal, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0035-v1": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Decent for the price, does the job for festival.",
+    "source": "fallback-heuristic"
+  },
+  "f0035-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "A bit overpriced for the quality, though the teal colour is lovely.",
+    "source": "fallback-heuristic"
+  },
+  "f0036-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "A bit overpriced for the quality, though the mustard colour is lovely.",
+    "source": "fallback-heuristic"
+  },
+  "f0036-v2": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0036-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Good quality silk blend, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0037-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0038-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly small, sizing up would be better.",
+    "source": "fallback-heuristic"
+  },
+  "f0038-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0038-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the cream shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0039-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0039-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The Van Heusen quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0039-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0040-v1": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0040-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for travel wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0040-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0041-v1": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly small, sizing up would be better.",
+    "source": "fallback-heuristic"
+  },
+  "f0041-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "A bit overpriced for the quality, though the black colour is lovely.",
+    "source": "fallback-heuristic"
+  },
+  "f0041-v3": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Sizing felt off compared to other DressBerry pieces I've bought before.",
+    "source": "fallback-heuristic"
+  },
+  "f0041-v4": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Decent for the price, does the job for college.",
+    "source": "fallback-heuristic"
+  },
+  "f0042-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0042-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the cream shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0043-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0043-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The polyester blend fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0044-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Started showing wear after just a few washes.",
+    "source": "fallback-heuristic"
+  },
+  "f0044-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Not quite what the photos showed -- expected better polyester blend quality.",
+    "source": "fallback-heuristic"
+  },
+  "f0045-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0045-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0046-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0047-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0047-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0048-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0048-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0049-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0049-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0049-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0050-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0050-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Decent for the price, does the job for formal.",
+    "source": "fallback-heuristic"
+  },
+  "f0050-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0050-v4": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Decent for the price, does the job for formal.",
+    "source": "fallback-heuristic"
+  },
+  "f0051-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "A bit overpriced for the quality, though the rust colour is lovely.",
+    "source": "fallback-heuristic"
+  },
+  "f0051-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the white shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0051-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for wedding wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0052-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for casual wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0052-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for casual, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0052-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "A bit overpriced for the quality, though the navy colour is lovely.",
+    "source": "fallback-heuristic"
+  },
+  "f0052-v4": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0053-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0053-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for daily, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0054-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Not quite what the photos showed -- expected better leather quality.",
+    "source": "fallback-heuristic"
+  },
+  "f0054-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for formal, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0055-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the white shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0055-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Good quality cotton, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0055-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Started showing wear after just a few washes.",
+    "source": "fallback-heuristic"
+  },
+  "f0055-v4": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "A bit overpriced for the quality, though the rust colour is lovely.",
+    "source": "fallback-heuristic"
+  },
+  "f0056-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0056-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0056-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for formal, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0057-v1": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0058-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0058-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0059-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0059-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0059-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0060-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0060-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0061-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Perfect for formal, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0061-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for daily wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0062-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for casual, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0062-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0062-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0063-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The Highlander quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0064-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0064-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0065-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The HRX quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0065-v2": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for office, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0065-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0065-v4": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The metal strap fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0066-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for wedding wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0066-v2": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0067-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Perfect for casual, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0067-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for casual, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0067-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0067-v4": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the teal shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0068-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Would definitely recommend for daily wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0068-v2": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0068-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Good quality leather, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0069-v1": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for daily, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0069-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0070-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0070-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0071-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0072-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0072-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0073-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0073-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0074-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0074-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0075-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for party wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0075-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0075-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for party, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0075-v4": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the navy shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0076-v1": {
+    "sentiment": 0.5,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0076-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0076-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly small, sizing up would be better.",
+    "source": "fallback-heuristic"
+  },
+  "f0077-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "The cotton fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0077-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for office, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0078-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0078-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0079-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0079-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the wine shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0080-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0080-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0081-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0082-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0082-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0083-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0083-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0083-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0084-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0085-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for travel wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0086-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Stitching came loose near the seams within a couple of weeks.",
+    "source": "fallback-heuristic"
+  },
+  "f0086-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0086-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0086-v4": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0087-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0088-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0088-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for daily, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0088-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The synthetic fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0089-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The HRX quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0089-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0090-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the rust shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0090-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The HRX quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0090-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0091-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0091-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly small, sizing up would be better.",
+    "source": "fallback-heuristic"
+  },
+  "f0091-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The USPolo quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0092-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Sizing felt off compared to other Allen Solly pieces I've bought before.",
+    "source": "fallback-heuristic"
+  },
+  "f0092-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the beige shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0093-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for party, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0093-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0093-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0093-v4": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0094-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0095-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0095-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0096-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0096-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0096-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for party, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0097-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0097-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0098-v1": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Perfect for daily, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0099-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0099-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0099-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the bottle green shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0099-v4": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Runs slightly small, sizing up would be better.",
+    "source": "fallback-heuristic"
+  },
+  "f0100-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Would definitely recommend for daily wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0100-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0101-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Good quality denim, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0101-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for college wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0101-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Would definitely recommend for college wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0102-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0102-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Decent for the price, does the job for office.",
+    "source": "fallback-heuristic"
+  },
+  "f0103-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Fabric is a bit thinner than I expected for formal wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0103-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Sizing felt off compared to other W pieces I've bought before.",
+    "source": "fallback-heuristic"
+  },
+  "f0103-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the navy shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0103-v4": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Not quite what the photos showed -- expected better chiffon quality.",
+    "source": "fallback-heuristic"
+  },
+  "f0104-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0104-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0104-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The linen blend fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0105-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the rust shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0105-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0105-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0106-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Fabric is a bit thinner than I expected for office wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0106-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0106-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "A bit overpriced for the quality, though the lavender colour is lovely.",
+    "source": "fallback-heuristic"
+  },
+  "f0106-v4": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0107-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0107-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0107-v3": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0107-v4": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for formal, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0108-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0109-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0109-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0109-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for formal, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0110-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0110-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0110-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0111-v1": {
+    "sentiment": 0.5,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0111-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The H&M quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0111-v3": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0111-v4": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Stitching came loose near the seams within a couple of weeks.",
+    "source": "fallback-heuristic"
+  },
+  "f0112-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0112-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0113-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for travel wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0113-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The denim fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0113-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Fabric is a bit thinner than I expected for travel wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0113-v4": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0114-v1": {
+    "sentiment": 0.86,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0114-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the rust shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0115-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0115-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0116-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "The denim fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0116-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0116-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly small, sizing up would be better.",
+    "source": "fallback-heuristic"
+  },
+  "f0117-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0117-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the pink shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0118-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "The Nike quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0118-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The mesh fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0118-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the maroon shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0118-v4": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Good quality mesh, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0119-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The Highlander quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0119-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0119-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the grey shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0120-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0120-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the beige shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0120-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for festival wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0121-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The Allen Solly quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0121-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The Allen Solly quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0121-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Perfect for formal, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0121-v4": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for formal, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0122-v1": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0122-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0122-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0123-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "The Roadster quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0123-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The Roadster quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0124-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0125-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0125-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for casual wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0125-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0126-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The cotton blend fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0126-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0127-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0127-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0127-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0128-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the beige shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0128-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0129-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0129-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0129-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0129-v4": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly small, sizing up would be better.",
+    "source": "fallback-heuristic"
+  },
+  "f0130-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0130-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0130-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0130-v4": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0131-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0131-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0131-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0132-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Started showing wear after just a few washes.",
+    "source": "fallback-heuristic"
+  },
+  "f0132-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Not quite what the photos showed -- expected better cotton quality.",
+    "source": "fallback-heuristic"
+  },
+  "f0133-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0134-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "The Highlander quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0135-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0135-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for office, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0136-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0136-v2": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The synthetic fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0137-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The rayon fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0137-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0138-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "The polyester blend fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0138-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0139-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "The cotton fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0139-v2": {
+    "sentiment": 0.86,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0139-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for office wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0140-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0141-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0141-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0141-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0142-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0142-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0142-v3": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0142-v4": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for office wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0143-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0143-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0143-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0144-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for casual wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0144-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0144-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0144-v4": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for casual wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0145-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0145-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0145-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0145-v4": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Not quite what the photos showed -- expected better viscose quality.",
+    "source": "fallback-heuristic"
+  },
+  "f0146-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0146-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0147-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the maroon shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0147-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly small, sizing up would be better.",
+    "source": "fallback-heuristic"
+  },
+  "f0147-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for festival, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0148-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0148-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for daily wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0149-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0149-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The viscose fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0149-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0149-v4": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for wedding, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0150-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0150-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for daily wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0150-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The Van Heusen quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0150-v4": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The cotton fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0151-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0151-v2": {
+    "sentiment": 0.8,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the maroon shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0152-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0152-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0153-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0153-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "The leather fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0153-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0154-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Decent for the price, does the job for casual.",
+    "source": "fallback-heuristic"
+  },
+  "f0155-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0155-v2": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0155-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly small, sizing up would be better.",
+    "source": "fallback-heuristic"
+  },
+  "f0155-v4": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0156-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly small, sizing up would be better.",
+    "source": "fallback-heuristic"
+  },
+  "f0156-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Decent for the price, does the job for office.",
+    "source": "fallback-heuristic"
+  },
+  "f0156-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0156-v4": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for office wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0157-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0157-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0157-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0158-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for festival, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0158-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for festival, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0159-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the lavender shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0159-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the cream shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0160-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0160-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0161-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the white shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0161-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0161-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0161-v4": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0162-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The silk blend fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0162-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0162-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0163-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Would definitely recommend for daily wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0163-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0163-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the navy shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0164-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0164-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0164-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Good quality synthetic, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0165-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The H&M quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0165-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The H&M quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0166-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0167-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0167-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0167-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0167-v4": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Perfect for office, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0168-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0168-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0168-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The Roadster quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0169-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0169-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The Roadster quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0169-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Decent for the price, does the job for casual.",
+    "source": "fallback-heuristic"
+  },
+  "f0170-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0170-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0170-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "The cotton blend fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0171-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the maroon shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0171-v2": {
+    "sentiment": 0.86,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the beige shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0172-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0172-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the navy shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0173-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0174-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0175-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0175-v2": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0175-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0176-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0176-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Decent for the price, does the job for daily.",
+    "source": "fallback-heuristic"
+  },
+  "f0177-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0177-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0178-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The Libas quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0178-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0179-v1": {
+    "sentiment": 0.86,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the wine shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0179-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Decent for the price, does the job for casual.",
+    "source": "fallback-heuristic"
+  },
+  "f0179-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Would definitely recommend for casual wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0179-v4": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for casual wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0180-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for gym, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0180-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Good quality cotton blend, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0180-v3": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0181-v1": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0181-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Good quality cotton, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0181-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0182-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0183-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Sizing felt off compared to other Skechers pieces I've bought before.",
+    "source": "fallback-heuristic"
+  },
+  "f0184-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0184-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0184-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0185-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0186-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for travel, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0186-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0186-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The denim fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0187-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0187-v2": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The Roadster quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0187-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for party wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0187-v4": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0188-v1": {
+    "sentiment": 0.8,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0189-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0190-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0190-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0190-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Good quality denim, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0190-v4": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0191-v1": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "The crepe fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0191-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The Mast & Harbour quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0191-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0192-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Stitching came loose near the seams within a couple of weeks.",
+    "source": "fallback-heuristic"
+  },
+  "f0192-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "A bit overpriced for the quality, though the beige colour is lovely.",
+    "source": "fallback-heuristic"
+  },
+  "f0192-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Not quite what the photos showed -- expected better mesh quality.",
+    "source": "fallback-heuristic"
+  },
+  "f0193-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "A bit overpriced for the quality, though the pink colour is lovely.",
+    "source": "fallback-heuristic"
+  },
+  "f0193-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Fabric is a bit thinner than I expected for formal wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0193-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0194-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0194-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Good quality cotton blend, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0194-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0195-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0196-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The H&M quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0196-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The rayon fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0197-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Not quite what the photos showed -- expected better polyester blend quality.",
+    "source": "fallback-heuristic"
+  },
+  "f0197-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0198-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0198-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0198-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The rayon fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0199-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0199-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0200-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0200-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for daily wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0200-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0201-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching came loose near the seams within a couple of weeks.",
+    "source": "fallback-heuristic"
+  },
+  "f0201-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Fabric is a bit thinner than I expected for daily wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0201-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0201-v4": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Sizing felt off compared to other W pieces I've bought before.",
+    "source": "fallback-heuristic"
+  },
+  "f0202-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "The rayon fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0202-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for college wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0203-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for travel, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0203-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for travel wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0204-v1": {
+    "sentiment": 0.8,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Good quality polyester blend, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0204-v2": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0204-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The Roadster quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0205-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the white shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0205-v2": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0206-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0206-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The cotton fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0207-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Decent for the price, does the job for daily.",
+    "source": "fallback-heuristic"
+  },
+  "f0207-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0207-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0208-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for formal wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0208-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0208-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Not quite what the photos showed -- expected better silk blend quality.",
+    "source": "fallback-heuristic"
+  },
+  "f0209-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The HERE&NOW quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0209-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0209-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0209-v4": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0210-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0210-v2": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "The synthetic fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0210-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0211-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the rust shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0211-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly small, sizing up would be better.",
+    "source": "fallback-heuristic"
+  },
+  "f0212-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The Levis quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0212-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0212-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0213-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0213-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0214-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0214-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Started showing wear after just a few washes.",
+    "source": "fallback-heuristic"
+  },
+  "f0214-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0215-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0215-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0216-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Started showing wear after just a few washes.",
+    "source": "fallback-heuristic"
+  },
+  "f0216-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Sizing felt off compared to other HRX pieces I've bought before.",
+    "source": "fallback-heuristic"
+  },
+  "f0216-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "A bit overpriced for the quality, though the navy colour is lovely.",
+    "source": "fallback-heuristic"
+  },
+  "f0217-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The leather fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0217-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for casual wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0218-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0218-v2": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0219-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0219-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for gym, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0220-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0220-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0220-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0220-v4": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for travel wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0221-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0221-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The cotton fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0221-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The Roadster quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0222-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0222-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Decent for the price, does the job for wedding.",
+    "source": "fallback-heuristic"
+  },
+  "f0222-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0223-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Good quality cotton, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0223-v2": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0224-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for daily wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0224-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0224-v3": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0225-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the lavender shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0225-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching came loose near the seams within a couple of weeks.",
+    "source": "fallback-heuristic"
+  },
+  "f0226-v1": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0226-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for daily wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0226-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for daily, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0227-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0227-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0228-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Good quality cotton, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0229-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Decent for the price, does the job for college.",
+    "source": "fallback-heuristic"
+  },
+  "f0229-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0230-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Would definitely recommend for office wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0230-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0230-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The HERE&NOW quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0231-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for festival, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0231-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for formal wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0231-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0232-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0233-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the bottle green shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0233-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0233-v3": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Decent for the price, does the job for wedding.",
+    "source": "fallback-heuristic"
+  },
+  "f0234-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Perfect for party, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0234-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0234-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly small, sizing up would be better.",
+    "source": "fallback-heuristic"
+  },
+  "f0235-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0235-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0236-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Decent for the price, does the job for daily.",
+    "source": "fallback-heuristic"
+  },
+  "f0236-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0236-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0236-v4": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The linen blend fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0237-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0237-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for party, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0238-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The cotton fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0239-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0239-v2": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the navy shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0239-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0240-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0240-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0241-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the bottle green shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0241-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Would definitely recommend for casual wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0241-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The DressBerry quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0241-v4": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0242-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0242-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for daily wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0243-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0243-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0244-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Started showing wear after just a few washes.",
+    "source": "fallback-heuristic"
+  },
+  "f0244-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0245-v1": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Started showing wear after just a few washes.",
+    "source": "fallback-heuristic"
+  },
+  "f0245-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0245-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0246-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0247-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0247-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0248-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0248-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0248-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0249-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0249-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the mustard shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0249-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0249-v4": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0250-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0250-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0250-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0251-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0251-v2": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0251-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0252-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0252-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0253-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0253-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0253-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the pink shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0254-v1": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Good quality denim, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0254-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0255-v1": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0255-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0256-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0256-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The Van Heusen quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0256-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the rust shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0257-v1": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0257-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "The cotton fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0257-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0258-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0258-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0259-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0259-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the bottle green shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0259-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0260-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the beige shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0260-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0260-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0261-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0262-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for wedding, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0262-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The synthetic fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0262-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0262-v4": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The Tokyo Talkies quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0263-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Decent for the price, does the job for casual.",
+    "source": "fallback-heuristic"
+  },
+  "f0263-v2": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching came loose near the seams within a couple of weeks.",
+    "source": "fallback-heuristic"
+  },
+  "f0264-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "The cotton blend fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0264-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0265-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0266-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0266-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0266-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Runs slightly small, sizing up would be better.",
+    "source": "fallback-heuristic"
+  },
+  "f0266-v4": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0267-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for party, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0267-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Stitching came loose near the seams within a couple of weeks.",
+    "source": "fallback-heuristic"
+  },
+  "f0268-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Good quality fleece, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0268-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Decent for the price, does the job for gym.",
+    "source": "fallback-heuristic"
+  },
+  "f0268-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The fleece fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0269-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0269-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Good quality cotton, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0270-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Stitching came loose near the seams within a couple of weeks.",
+    "source": "fallback-heuristic"
+  },
+  "f0270-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Fabric is a bit thinner than I expected for party wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0270-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Good quality denim, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0271-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0271-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0272-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0272-v2": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for office wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0272-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0272-v4": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0273-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0273-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0273-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0274-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0274-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0274-v3": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The Van Heusen quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0275-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for party, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0275-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0275-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The silk blend fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0275-v4": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for festival wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0276-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0276-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly small, sizing up would be better.",
+    "source": "fallback-heuristic"
+  },
+  "f0276-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the olive shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0277-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0277-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0277-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for festival, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0278-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0279-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0280-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The Roadster quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0280-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0280-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0281-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for wedding, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0281-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the olive shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0282-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for daily, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0282-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for office, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0282-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Good quality polyester blend, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0283-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0283-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the teal shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0283-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for streetwear, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0283-v4": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Perfect for streetwear, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0284-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0284-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the olive shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0284-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "The synthetic fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0285-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0285-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for formal, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0285-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the grey shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0285-v4": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0286-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The chiffon fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0287-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0287-v2": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Started showing wear after just a few washes.",
+    "source": "fallback-heuristic"
+  },
+  "f0287-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0288-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Decent for the price, does the job for wedding.",
+    "source": "fallback-heuristic"
+  },
+  "f0288-v2": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0288-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0289-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0289-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0289-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0289-v4": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Would definitely recommend for streetwear wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0290-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0290-v2": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for college wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0291-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0291-v2": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Good quality fleece, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0292-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0292-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "The H&M quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0293-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0293-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Good quality silk blend, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0293-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "The silk blend fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0294-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the black shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0295-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Sizing felt off compared to other HERE&NOW pieces I've bought before.",
+    "source": "fallback-heuristic"
+  },
+  "f0295-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0295-v3": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0296-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for daily, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0296-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The cotton blend fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0296-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0297-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0298-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the maroon shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0298-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching came loose near the seams within a couple of weeks.",
+    "source": "fallback-heuristic"
+  },
+  "f0299-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for casual, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0299-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0300-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0300-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0301-v1": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0301-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The linen blend fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0301-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exactly as described, no surprises -- happy with this purchase.",
+    "source": "fallback-heuristic"
+  },
+  "f0302-v1": {
+    "sentiment": 0.5,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Not quite what the photos showed -- expected better cotton blend quality.",
+    "source": "fallback-heuristic"
+  },
+  "f0302-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "A bit overpriced for the quality, though the cream colour is lovely.",
+    "source": "fallback-heuristic"
+  },
+  "f0302-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Perfect for streetwear, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0303-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Good quality denim, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0304-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for travel wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0304-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0304-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Durable -- this has survived a lot of washing without losing shape.",
+    "source": "fallback-heuristic"
+  },
+  "f0305-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0306-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "After multiple washes the colour is still intact, no fading at all.",
+    "source": "fallback-heuristic"
+  },
+  "f0306-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0306-v3": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the bottle green shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0307-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for travel, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0307-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "The cotton blend fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0308-v1": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The cotton fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0308-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0309-v1": {
+    "sentiment": 0.56,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0310-v1": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0310-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Perfect for daily, wore it recently and got a lot of compliments.",
+    "source": "fallback-heuristic"
+  },
+  "f0311-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Decent for the price, does the job for formal.",
+    "source": "fallback-heuristic"
+  },
+  "f0311-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The polyester blend fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0312-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0312-v2": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Colour is slightly different from the photos but still looks nice.",
+    "source": "fallback-heuristic"
+  },
+  "f0312-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Decent for the price, does the job for party.",
+    "source": "fallback-heuristic"
+  },
+  "f0313-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0313-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Great value for money at this price point.",
+    "source": "fallback-heuristic"
+  },
+  "f0313-v3": {
+    "sentiment": 0.56,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The Roadster quality is consistent with their other pieces I own.",
+    "source": "fallback-heuristic"
+  },
+  "f0314-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Exchanged for a different size and the process was smooth.",
+    "source": "fallback-heuristic"
+  },
+  "f0314-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0314-v3": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0315-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Runs slightly small, sizing up would be better.",
+    "source": "fallback-heuristic"
+  },
+  "f0315-v2": {
+    "sentiment": 0.74,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Runs slightly large, would suggest ordering one size down.",
+    "source": "fallback-heuristic"
+  },
+  "f0315-v3": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "True to size, fits exactly as expected.",
+    "source": "fallback-heuristic"
+  },
+  "f0316-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the cream shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0317-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "The silicone strap fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0318-v1": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Looks expensive for what I paid -- really happy with the beige shade.",
+    "source": "fallback-heuristic"
+  },
+  "f0318-v2": {
+    "sentiment": 0.5,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Would definitely recommend for daily wear.",
+    "source": "fallback-heuristic"
+  },
+  "f0318-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Comfortable enough to wear the whole day without any irritation.",
+    "source": "fallback-heuristic"
+  },
+  "f0319-v1": {
+    "sentiment": 0.62,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "Stitching quality is solid, no loose threads even after regular use.",
+    "source": "fallback-heuristic"
+  },
+  "f0319-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 0,
+    "fit_flag": 0,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0319-v3": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 0,
+    "reviewNote": "The cotton fabric feels premium for this price.",
+    "source": "fallback-heuristic"
+  },
+  "f0320-v1": {
+    "sentiment": 0.8,
+    "durability_flag": 0,
+    "fit_flag": 1,
+    "reviewNote": "Delivery was faster than expected, arrived well packed.",
+    "source": "fallback-heuristic"
+  },
+  "f0320-v2": {
+    "sentiment": 0.6799999999999999,
+    "durability_flag": 1,
+    "fit_flag": 1,
+    "reviewNote": "Good quality chiffon, doesn't feel cheap at all.",
+    "source": "fallback-heuristic"
+  }
+}

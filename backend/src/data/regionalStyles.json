@@ -1,0 +1,537 @@
+{
+  "Kerala": {
+    "traditionalWear": [
+      "Kasavu Saree",
+      "Mundu",
+      "Settu Mundu"
+    ],
+    "preferredFabrics": [
+      "Cotton",
+      "Kasavu Cotton"
+    ],
+    "preferredColors": [
+      "White",
+      "Gold",
+      "Cream"
+    ],
+    "majorFestivals": [
+      "Onam",
+      "Vishu",
+      "Christmas"
+    ],
+    "styleNotes": "Understated, gold-bordered off-white handloom is the dominant traditional aesthetic.",
+    "rankingBoosts": {
+      "cotton": 0.12,
+      "handloom": 0.18,
+      "kasavu": 0.15,
+      "silk": -0.05
+    }
+  },
+  "Tamil Nadu": {
+    "traditionalWear": [
+      "Pattu Saree",
+      "Veshti",
+      "Pavadai Sattai"
+    ],
+    "preferredFabrics": [
+      "Silk",
+      "Cotton",
+      "Pattu Silk"
+    ],
+    "preferredColors": [
+      "Red",
+      "Mustard",
+      "Green",
+      "Gold"
+    ],
+    "majorFestivals": [
+      "Pongal",
+      "Tamil New Year",
+      "Navratri"
+    ],
+    "styleNotes": "Kanjeevaram-style silk with contrast borders is the benchmark traditional wear.",
+    "rankingBoosts": {
+      "silk": 0.15,
+      "kanjeevaram": 0.2,
+      "cotton": 0.08,
+      "synthetic": -0.08
+    }
+  },
+  "Karnataka": {
+    "traditionalWear": [
+      "Mysore Silk Saree",
+      "Ilkal Saree",
+      "Kurta Pajama"
+    ],
+    "preferredFabrics": [
+      "Mysore Silk",
+      "Cotton",
+      "Silk"
+    ],
+    "preferredColors": [
+      "Purple",
+      "Gold",
+      "Maroon"
+    ],
+    "majorFestivals": [
+      "Ugadi",
+      "Dasara",
+      "Ganesh Chaturthi"
+    ],
+    "styleNotes": "Mysore silk sarees with a characteristic sheen and gold zari are a strong regional marker.",
+    "rankingBoosts": {
+      "silk": 0.15,
+      "mysore": 0.18,
+      "cotton": 0.06,
+      "synthetic": -0.06
+    }
+  },
+  "Andhra Pradesh": {
+    "traditionalWear": [
+      "Gadwal Saree",
+      "Kalamkari Print",
+      "Kurta"
+    ],
+    "preferredFabrics": [
+      "Silk Cotton",
+      "Kalamkari Cotton"
+    ],
+    "preferredColors": [
+      "Maroon",
+      "Mustard",
+      "Green"
+    ],
+    "majorFestivals": [
+      "Ugadi",
+      "Sankranti",
+      "Dasara"
+    ],
+    "styleNotes": "Kalamkari hand-block prints are a distinctive regional textile art.",
+    "rankingBoosts": {
+      "kalamkari": 0.15,
+      "cotton": 0.1,
+      "silk": 0.08,
+      "synthetic": -0.05
+    }
+  },
+  "Telangana": {
+    "traditionalWear": [
+      "Pochampally Ikat Saree",
+      "Kurta Pajama"
+    ],
+    "preferredFabrics": [
+      "Ikat Silk",
+      "Cotton"
+    ],
+    "preferredColors": [
+      "Maroon",
+      "Black",
+      "Yellow"
+    ],
+    "majorFestivals": [
+      "Bathukamma",
+      "Bonalu",
+      "Sankranti"
+    ],
+    "styleNotes": "Geometric Ikat weave patterns from Pochampally are the standout regional textile.",
+    "rankingBoosts": {
+      "ikat": 0.18,
+      "silk": 0.12,
+      "cotton": 0.06,
+      "synthetic": -0.05
+    }
+  },
+  "Maharashtra": {
+    "traditionalWear": [
+      "Nauvari Saree",
+      "Paithani Saree",
+      "Dhoti Kurta"
+    ],
+    "preferredFabrics": [
+      "Silk",
+      "Cotton",
+      "Paithani Silk"
+    ],
+    "preferredColors": [
+      "Green",
+      "Yellow",
+      "Maroon"
+    ],
+    "majorFestivals": [
+      "Ganesh Chaturthi",
+      "Gudi Padwa",
+      "Navratri"
+    ],
+    "styleNotes": "The nine-yard Nauvari drape and peacock-motif Paithani silk are iconic regional signatures.",
+    "rankingBoosts": {
+      "paithani": 0.18,
+      "silk": 0.12,
+      "cotton": 0.08,
+      "nauvari": 0.15
+    }
+  },
+  "Gujarat": {
+    "traditionalWear": [
+      "Chaniya Choli",
+      "Bandhani Saree",
+      "Kediyu"
+    ],
+    "preferredFabrics": [
+      "Bandhani Print",
+      "Georgette",
+      "Cotton"
+    ],
+    "preferredColors": [
+      "Multicolor",
+      "Red",
+      "Yellow"
+    ],
+    "majorFestivals": [
+      "Navratri",
+      "Uttarayan",
+      "Diwali"
+    ],
+    "styleNotes": "Bandhani tie-dye and mirror-work embroidery define Gujarati festive dressing, especially for Navratri.",
+    "rankingBoosts": {
+      "bandhani": 0.18,
+      "mirror work": 0.15,
+      "cotton": 0.08,
+      "georgette": 0.06
+    }
+  },
+  "Rajasthan": {
+    "traditionalWear": [
+      "Ghagra Choli",
+      "Bandhej Saree",
+      "Dhoti Kurta"
+    ],
+    "preferredFabrics": [
+      "Bandhej Print",
+      "Cotton",
+      "Silk"
+    ],
+    "preferredColors": [
+      "Red",
+      "Orange",
+      "Multicolor"
+    ],
+    "majorFestivals": [
+      "Teej",
+      "Gangaur",
+      "Diwali"
+    ],
+    "styleNotes": "Bold Bandhej tie-dye prints and mirror embellishment are the strongest regional identifiers.",
+    "rankingBoosts": {
+      "bandhej": 0.18,
+      "mirror work": 0.14,
+      "cotton": 0.06,
+      "silk": 0.08
+    }
+  },
+  "Punjab": {
+    "traditionalWear": [
+      "Patiala Suit",
+      "Phulkari Dupatta",
+      "Kurta Pajama"
+    ],
+    "preferredFabrics": [
+      "Cotton",
+      "Silk",
+      "Phulkari Embroidered Fabric"
+    ],
+    "preferredColors": [
+      "Yellow",
+      "Red",
+      "Orange"
+    ],
+    "majorFestivals": [
+      "Baisakhi",
+      "Lohri",
+      "Diwali"
+    ],
+    "styleNotes": "Phulkari embroidery and the Patiala salwar silhouette are the defining regional markers.",
+    "rankingBoosts": {
+      "phulkari": 0.18,
+      "cotton": 0.1,
+      "silk": 0.08
+    }
+  },
+  "West Bengal": {
+    "traditionalWear": [
+      "Red White Saree",
+      "Tant Saree",
+      "Panjabi Dhoti"
+    ],
+    "preferredFabrics": [
+      "Tant Cotton",
+      "Silk",
+      "Handloom Cotton"
+    ],
+    "preferredColors": [
+      "Red",
+      "White",
+      "Yellow"
+    ],
+    "majorFestivals": [
+      "Durga Puja",
+      "Poila Boishakh",
+      "Kali Puja"
+    ],
+    "styleNotes": "The red-bordered white Tant/Garad saree is the single most iconic Bengali festive image.",
+    "rankingBoosts": {
+      "tant": 0.18,
+      "handloom": 0.15,
+      "cotton": 0.1,
+      "silk": 0.08
+    }
+  },
+  "Assam": {
+    "traditionalWear": [
+      "Mekhela Chador",
+      "Gamosa",
+      "Kurta Dhoti"
+    ],
+    "preferredFabrics": [
+      "Muga Silk",
+      "Eri Silk",
+      "Cotton"
+    ],
+    "preferredColors": [
+      "Red",
+      "White",
+      "Gold"
+    ],
+    "majorFestivals": [
+      "Bihu"
+    ],
+    "styleNotes": "Muga silk's natural golden sheen and gamosa motifs are unique to Assamese textile heritage.",
+    "rankingBoosts": {
+      "muga silk": 0.2,
+      "eri silk": 0.15,
+      "handloom": 0.15,
+      "cotton": 0.06
+    }
+  },
+  "Delhi": {
+    "traditionalWear": [
+      "Anarkali Suit",
+      "Sherwani",
+      "Saree"
+    ],
+    "preferredFabrics": [
+      "Silk",
+      "Georgette",
+      "Velvet",
+      "Cotton"
+    ],
+    "preferredColors": [
+      "Maroon",
+      "Gold",
+      "Navy"
+    ],
+    "majorFestivals": [
+      "Diwali",
+      "Karva Chauth",
+      "Holi"
+    ],
+    "styleNotes": "As a cosmopolitan hub, Delhi blends pan-Indian ethnic styles with strong Western fusion trends.",
+    "rankingBoosts": {
+      "fusion": 0.1,
+      "velvet": 0.08,
+      "georgette": 0.06,
+      "silk": 0.08
+    }
+  },
+  "Uttar Pradesh": {
+    "traditionalWear": [
+      "Chikankari Kurta",
+      "Banarasi Saree",
+      "Sherwani"
+    ],
+    "preferredFabrics": [
+      "Chikankari Cotton",
+      "Banarasi Silk"
+    ],
+    "preferredColors": [
+      "White",
+      "Pastel Shades",
+      "Gold"
+    ],
+    "majorFestivals": [
+      "Diwali",
+      "Holi",
+      "Eid"
+    ],
+    "styleNotes": "Lucknowi Chikankari embroidery and Banarasi silk weaving are the two hallmark regional crafts.",
+    "rankingBoosts": {
+      "chikankari": 0.2,
+      "banarasi": 0.18,
+      "cotton": 0.08,
+      "silk": 0.1
+    }
+  },
+  "Bihar": {
+    "traditionalWear": [
+      "Madhubani Print Saree",
+      "Kurta Dhoti"
+    ],
+    "preferredFabrics": [
+      "Cotton",
+      "Tussar Silk"
+    ],
+    "preferredColors": [
+      "Red",
+      "Yellow",
+      "White"
+    ],
+    "majorFestivals": [
+      "Chhath Puja",
+      "Diwali",
+      "Holi"
+    ],
+    "styleNotes": "Hand-painted Madhubani motifs are a distinctive regional textile art increasingly used on sarees.",
+    "rankingBoosts": {
+      "madhubani": 0.18,
+      "cotton": 0.08,
+      "tussar": 0.12
+    }
+  },
+  "Odisha": {
+    "traditionalWear": [
+      "Sambalpuri Saree",
+      "Kurta"
+    ],
+    "preferredFabrics": [
+      "Sambalpuri Ikat",
+      "Cotton",
+      "Silk"
+    ],
+    "preferredColors": [
+      "Red",
+      "Black",
+      "White"
+    ],
+    "majorFestivals": [
+      "Rath Yatra",
+      "Durga Puja",
+      "Nuakhai"
+    ],
+    "styleNotes": "Sambalpuri Ikat weaving with its distinctive tie-dye pattern is a nationally recognised craft.",
+    "rankingBoosts": {
+      "sambalpuri": 0.2,
+      "ikat": 0.15,
+      "cotton": 0.08,
+      "silk": 0.1
+    }
+  },
+  "Goa": {
+    "traditionalWear": [
+      "Kunbi Saree",
+      "Western Party Wear"
+    ],
+    "preferredFabrics": [
+      "Cotton",
+      "Rayon",
+      "Linen"
+    ],
+    "preferredColors": [
+      "Red",
+      "White",
+      "Pastel Shades"
+    ],
+    "majorFestivals": [
+      "Christmas",
+      "Carnival",
+      "Ganesh Chaturthi"
+    ],
+    "styleNotes": "Goa's beach and Portuguese-influenced culture make it one of the few regions where Western resort wear is treated as everyday dressing.",
+    "rankingBoosts": {
+      "cotton": 0.1,
+      "linen": 0.1,
+      "rayon": 0.06,
+      "resort": 0.08
+    }
+  },
+  "Jammu and Kashmir": {
+    "traditionalWear": [
+      "Pheran",
+      "Kashmiri Shawl"
+    ],
+    "preferredFabrics": [
+      "Wool",
+      "Pashmina",
+      "Tweed"
+    ],
+    "preferredColors": [
+      "Maroon",
+      "Brown",
+      "Grey"
+    ],
+    "majorFestivals": [
+      "Eid",
+      "Navreh"
+    ],
+    "styleNotes": "Pashmina shawls and the Pheran cloak reflect dressing built around genuinely cold winters.",
+    "rankingBoosts": {
+      "pashmina": 0.2,
+      "wool": 0.15,
+      "tweed": 0.1,
+      "cotton": -0.04
+    }
+  },
+  "Himachal Pradesh": {
+    "traditionalWear": [
+      "Himachali Cap",
+      "Woolen Kurta",
+      "Shawl"
+    ],
+    "preferredFabrics": [
+      "Wool",
+      "Pashmina"
+    ],
+    "preferredColors": [
+      "Grey",
+      "Maroon",
+      "Green"
+    ],
+    "majorFestivals": [
+      "Kullu Dussehra",
+      "Diwali"
+    ],
+    "styleNotes": "Heavy wool layering and the distinctive Himachali cap reflect the hill-state climate.",
+    "rankingBoosts": {
+      "wool": 0.15,
+      "pashmina": 0.12,
+      "handwoven": 0.1
+    }
+  },
+  "Northeast India": {
+    "traditionalWear": [
+      "Mekhela Chador",
+      "Naga Shawl",
+      "Manipuri Innaphi"
+    ],
+    "preferredFabrics": [
+      "Eri Silk",
+      "Cotton",
+      "Handwoven Wool"
+    ],
+    "preferredColors": [
+      "Red",
+      "Black",
+      "White"
+    ],
+    "majorFestivals": [
+      "Bihu",
+      "Hornbill Festival",
+      "Christmas"
+    ],
+    "styleNotes": "A textile-rich region with distinct handloom traditions across Assam, Nagaland, Manipur and Meghalaya.",
+    "rankingBoosts": {
+      "eri silk": 0.15,
+      "handloom": 0.15,
+      "cotton": 0.08,
+      "wool": 0.06
+    }
+  }
+}
