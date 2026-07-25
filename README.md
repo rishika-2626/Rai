@@ -29,20 +29,6 @@ Built for **Myntra HackerRamp 2026** · Theme: *Build What's Next — Myntra for
 
 <br/>
 
-## 🎥 Demo
-
-<div align="center">
-
-![Rai demo](./docs/demo.gif)
-
-*(Drop a screen recording at `docs/demo.gif` — this is the single highest-leverage thing you can add before judging.)*
-
-**👉 Try it live: [rai-orpin.vercel.app](https://rai-orpin.vercel.app)**
-
-</div>
-
-<br/>
-
 ## 📖 Table of Contents
 
 - [The Problem](#-the-problem)
@@ -353,6 +339,20 @@ npm run dev
 - 📈 Seller insights dashboard
 
 <br/>
+
+---
+
+# 🎥 Demo
+
+<div align="center">
+
+### See Rai in Action
+
+**▶ [Watch the Demo Video](https://drive.google.com/file/d/1mZ-eWIP3nRTKwpbYLWICILFvOt9AlGhU/view?usp=drive_link)**
+
+*A quick walkthrough of Rai's AI-powered shopping experience.*
+
+</div>
 
 ---
 
