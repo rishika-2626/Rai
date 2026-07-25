@@ -6,7 +6,7 @@
 
 **🤖 An AI Shopping Concierge for Bharat**
 
-Built for **Myntra HackerRamp 2026** · Theme: *Build What's Next — Myntra for Bharat*
+Built for **Myntra HackerRamp 2026** · Theme: *Build What's Next - Myntra for Bharat*
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-rai--orpin.vercel.app-FF4D5E?style=for-the-badge&logo=vercel&logoColor=white)](https://rai-orpin.vercel.app)
 
@@ -25,7 +25,7 @@ Built for **Myntra HackerRamp 2026** · Theme: *Build What's Next — Myntra for
 ### 🎯 The one-line pitch
 
 > The next 100 million online shoppers don't need more choices. They need confidence.
-> Rai turns a natural-language shopping request into a small, explainable, personalized shortlist — instead of 5,000 products ranked by popularity.
+> Rai turns a natural-language shopping request into a small, explainable, personalized shortlist - instead of 5,000 products ranked by popularity.
 
 <br/>
 
