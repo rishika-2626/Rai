@@ -177,20 +177,27 @@ No infinite scroll. A capped, ranked shortlist every time — decision fatigue b
 
 ## 📸 Screenshots
 
-| Landing Page | Recommendation Shelf |
-|---|---|
-| ![Landing](./docs/screenshots/landing.png) | ![Shelf](./docs/screenshots/shelf.png) |
+## 📸 Screenshots
 
-| Product Details | ValueIQ Breakdown |
-|---|---|
-| ![Product Details](./docs/screenshots/product-detail.png) | ![Breakdown](./docs/screenshots/valueiq-breakdown.png) |
+<div align="center">
 
-| Ask Someone |
-|---|
-| ![Ask Someone](./docs/screenshots/ask-someone.png) |
+### 🏠 Landing Page
 
-*(Add PNGs at the paths above — `docs/screenshots/`. Real screenshots here matter as much as the demo GIF for judging.)*
+<img src="https://github.com/user-attachments/assets/f8e0749e-04a5-4bd1-ac36-ff1c3309e739" alt="Rai Landing Page" width="350"/>
 
+<br/><br/>
+
+### 🛍️ Recommendation Shelf
+
+<img src="https://github.com/user-attachments/assets/ec3b5da8-3dfc-41e4-92a1-3d1ea4d70eab" alt="Recommendation Shelf" width="350"/>
+
+<br/><br/>
+
+### 📦 Product Details
+
+<img src="https://github.com/user-attachments/assets/8a923d09-86b2-4aef-b66a-db3f277220be" alt="Product Details" width="350"/>
+
+</div>
 <br/>
 
 ## 🏗️ Architecture
