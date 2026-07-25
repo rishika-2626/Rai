@@ -6,7 +6,7 @@
 
 **🤖 An AI Shopping Concierge for Bharat**
 
-Built for **Myntra HackerRamp 2026** · Theme: *Build What's Next - Myntra for Bharat*
+Built for **Myntra HackerRamp 2026** · Theme: *The Bharat opportunity*
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-rai--orpin.vercel.app-FF4D5E?style=for-the-badge&logo=vercel&logoColor=white)](https://rai-orpin.vercel.app)
 
