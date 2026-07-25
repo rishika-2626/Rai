@@ -361,6 +361,20 @@ npm run dev
 
 ---
 
+# 📑 Presentation
+
+<div align="center">
+
+### Explore the Complete Project Pitch
+
+**📄 [View the Presentation (PDF)](YOUR_PDF_LINK)**
+
+*A concise overview of Rai's problem statement, solution, architecture, key features, and impact for Myntra.*
+
+</div>
+
+---
+
 <div align="center">
 
 ### ❤️ Built for Myntra HackerRamp 2026
