@@ -367,7 +367,7 @@ npm run dev
 
 ### Explore the Complete Project Pitch
 
-📄 **[View the Presentation (PDF)](docs/Rai_Presentation.pdf)**
+📄 **[View the Presentation (PDF)](docs/Rai_Presentation.pdf.pdf)**
 
 *A concise overview of Rai's problem statement, solution, architecture, key features, and impact for Myntra.*
 
