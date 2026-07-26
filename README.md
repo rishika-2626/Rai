@@ -379,9 +379,9 @@ npm run dev
 
 ### ❤️ Built for Myntra HackerRamp 2026
 
-**Theme:** Build What's Next — Myntra for Bharat
+**Theme:** *The Bharat opportunity*
 
-Rai helps Bharat's next 100 million shoppers buy with confidence — through AI-powered, personalized, and explainable recommendations, instead of endless choice.
+Rai helps Bharat's next 100 million shoppers buy with confidence - through AI-powered, personalized, and explainable recommendations, instead of endless choice.
 
 **[rai-orpin.vercel.app](https://rai-orpin.vercel.app)**
 
