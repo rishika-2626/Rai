@@ -4,6 +4,7 @@ import {
   ArrowLeft,
   ArrowRight,
   Check,
+  Copy,
   Heart,
   Loader2,
   MessageCircle,
@@ -701,6 +702,7 @@ function Index() {
   const [errorMsg, setErrorMsg] = useState("");
   const [health, setHealth] = useState<Awaited<ReturnType<typeof api.health>> | null>(null);
   const [activeCat, setActiveCat] = useState("All");
+  const [copiedShortlist, setCopiedShortlist] = useState(false);
   const inputRef = useRef<HTMLInputElement | null>(null);
   const lang = getText(intent?.language);
   const currentQuestionSet = getQuestionSet(intent, lang);
@@ -715,6 +717,29 @@ function Index() {
   useEffect(() => {
     if (stage === "intent") inputRef.current?.focus();
   }, [stage]);
+
+  const handleCopyShortlist = () => {
+    if (!results || results.length === 0) return;
+
+    const header = `🛍️ Rai AI Shopping Concierge — Top ${results.length} Recommendations\n`;
+    const subtext = intent?.state ? `📍 Personalized for: ${intent.state}\n\n` : `\n`;
+
+    const itemsText = results
+      .map((item, idx) => {
+        const bullets =
+          item.bullets && item.bullets.length > 0
+            ? `\n   • ${item.bullets.slice(0, 2).join("\n   • ")}`
+            : "";
+        return `${idx + 1}. *${item.name}*\n   💰 Price: ₹${item.price.toLocaleString("en-IN")} | ⭐ ValueIQ: ${item.score}/100${bullets}`;
+      })
+      .join("\n\n");
+
+    const fullText = `${header}${subtext}${itemsText}\n\n✨ Powered by Rai (https://rai-orpin.vercel.app)`;
+
+    navigator.clipboard.writeText(fullText);
+    setCopiedShortlist(true);
+    setTimeout(() => setCopiedShortlist(false), 2500);
+  };
 
   const fetchShortlist = async (finalIntent: Intent) => {
     setStage("loading");
@@ -1163,24 +1188,44 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
               </p>
             </div>
 
-            <div className="mb-10 flex flex-wrap gap-3">
-              <div className="flex items-center gap-2 rounded-full border border-line bg-surface px-4 py-2 shadow-sm">
-                <span>🧠</span>
-                <span className="text-sm font-semibold">
-                  {lang.shelf.comparedProductsChip.replace(
-                    "{count}",
-                    scanned?.toLocaleString("en-IN") ?? "802"
-                  )}
-                </span>
+            <div className="mb-10 flex flex-wrap items-center justify-between gap-3">
+              <div className="flex flex-wrap gap-3">
+                <div className="flex items-center gap-2 rounded-full border border-line bg-surface px-4 py-2 shadow-sm">
+                  <span>🧠</span>
+                  <span className="text-sm font-semibold">
+                    {lang.shelf.comparedProductsChip.replace(
+                      "{count}",
+                      scanned?.toLocaleString("en-IN") ?? "802"
+                    )}
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 rounded-full border border-amber-100 bg-amber-50 px-4 py-2">
+                  <span>⭐</span>
+                  <span className="text-sm font-semibold">{lang.shelf.popularityIgnored}</span>
+                </div>
+                <div className="flex items-center gap-2 rounded-full border border-green-100 bg-green-50 px-4 py-2">
+                  <span>✔</span>
+                  <span className="text-sm font-semibold">{lang.shelf.explainableRanking}</span>
+                </div>
               </div>
-              <div className="flex items-center gap-2 rounded-full border border-amber-100 bg-amber-50 px-4 py-2">
-                <span>⭐</span>
-                <span className="text-sm font-semibold">{lang.shelf.popularityIgnored}</span>
-              </div>
-              <div className="flex items-center gap-2 rounded-full border border-green-100 bg-green-50 px-4 py-2">
-                <span>✔</span>
-                <span className="text-sm font-semibold">{lang.shelf.explainableRanking}</span>
-              </div>
+
+              <button
+                type="button"
+                onClick={handleCopyShortlist}
+                className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary-soft/60 px-4 py-2 text-sm font-bold text-primary transition hover:bg-primary-soft hover:shadow-sm"
+              >
+                {copiedShortlist ? (
+                  <>
+                    <Check size={16} className="text-green-600" />
+                    <span>Copied Shortlist!</span>
+                  </>
+                ) : (
+                  <>
+                    <Copy size={16} />
+                    <span>Copy Shortlist Summary</span>
+                  </>
+                )}
+              </button>
             </div>
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {results.map((item, i) => (
