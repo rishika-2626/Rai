@@ -25,7 +25,8 @@ function inferStateFromQuery(query) {
   const q = query.toLowerCase();
 
   for (const [city, state] of Object.entries(cityMappings)) {
-    if (q.includes(city.toLowerCase())) {
+    const cityPattern = new RegExp(`\\b${city}\\b`, "i");
+    if (cityPattern.test(query)) {
       return {
         state,
         confidence: 0.95,
