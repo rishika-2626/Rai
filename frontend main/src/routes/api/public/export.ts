@@ -20,7 +20,7 @@ const EXCLUDED_NAMES = new Set([
 ]);
 
 const EXCLUDED_PATTERNS = [
-  /^\./, // hidden files/directories
+  /(^|[\\/])\./, // hidden files/directories
   /tsconfig\.tsbuildinfo$/,
   /\.lock$/,
   /\.log$/,
