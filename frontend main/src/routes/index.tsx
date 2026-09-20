@@ -7,6 +7,8 @@ import {
   Heart,
   Loader2,
   MessageCircle,
+  Mic,
+  MicOff,
   Search,
   Share2,
   ShoppingBag,
@@ -682,6 +684,8 @@ function Index() {
   const [errorMsg, setErrorMsg] = useState("");
   const [health, setHealth] = useState<Awaited<ReturnType<typeof api.health>> | null>(null);
   const [activeCat, setActiveCat] = useState("All");
+  const [isListening, setIsListening] = useState(false);
+  const recognitionRef = useRef<any>(null);
   const inputRef = useRef<HTMLInputElement | null>(null);
   const lang = getText(intent?.language);
   const currentQuestionSet = getQuestionSet(intent, lang);
@@ -696,6 +700,55 @@ function Index() {
   useEffect(() => {
     if (stage === "intent") inputRef.current?.focus();
   }, [stage]);
+
+  const handleVoiceInput = () => {
+    const SpeechRecognition =
+      (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+
+    if (!SpeechRecognition) {
+      alert("Voice search is not supported in your browser. Please try Chrome, Edge, or Safari.");
+      return;
+    }
+
+    if (isListening) {
+      recognitionRef.current?.stop();
+      setIsListening(false);
+      return;
+    }
+
+    try {
+      const recognition = new SpeechRecognition();
+      recognitionRef.current = recognition;
+      recognition.continuous = false;
+      recognition.interimResults = true;
+      recognition.lang = intent?.language === 'hi' ? 'hi-IN' : 'en-IN';
+
+      recognition.onstart = () => {
+        setIsListening(true);
+      };
+
+      recognition.onresult = (event: any) => {
+        const transcript = Array.from(event.results)
+          .map((result: any) => result[0].transcript)
+          .join("");
+        setInputValue(transcript);
+      };
+
+      recognition.onerror = (event: any) => {
+        console.error("Speech recognition error:", event.error);
+        setIsListening(false);
+      };
+
+      recognition.onend = () => {
+        setIsListening(false);
+      };
+
+      recognition.start();
+    } catch (err) {
+      console.error("Failed to start speech recognition:", err);
+      setIsListening(false);
+    }
+  };
 
   const fetchShortlist = async (finalIntent: Intent) => {
     setStage("loading");
@@ -827,6 +880,18 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
                       placeholder={lang.hero.searchPlaceholder}
                       className="flex-1 bg-transparent py-2.5 text-[14.5px] text-ink placeholder:text-ink-soft focus:outline-none"
                     />
+                    <button
+                      type="button"
+                      onClick={handleVoiceInput}
+                      title={isListening ? "Listening... Click to stop" : "Speak your query"}
+                      className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-colors ${
+                        isListening
+                          ? "bg-red-500 text-white animate-pulse"
+                          : "text-ink-soft hover:bg-slate-100 hover:text-primary"
+                      }`}
+                    >
+                      {isListening ? <MicOff size={16} /> : <Mic size={16} />}
+                    </button>
                     <button
                       onClick={() => inputValue.trim() && submitIntent(inputValue.trim())}
                       className="btn-primary inline-flex shrink-0 items-center gap-1.5 rounded-full px-5 py-2.5 text-[13px] font-bold"
