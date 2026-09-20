@@ -136,8 +136,11 @@ const OCCASION_MATCH_HIT = 100;
 const OCCASION_MATCH_MISS = 40;
 function computeOccasionMatch(product, occasion) {
   if (!occasion) return 100;
+  const target = String(occasion).trim().toLowerCase();
+  if (!target) return 100;
   const tags = Array.isArray(product?.occasion) ? product.occasion : [];
-  return tags.includes(occasion) ? OCCASION_MATCH_HIT : OCCASION_MATCH_MISS;
+  const isMatch = tags.some((tag) => String(tag).trim().toLowerCase() === target);
+  return isMatch ? OCCASION_MATCH_HIT : OCCASION_MATCH_MISS;
 }
 
 function computeUserContextSignals(product, intent = {}) {
