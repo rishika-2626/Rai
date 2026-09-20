@@ -41,8 +41,27 @@ export const Route = createFileRoute("/")({
 
 type Stage = "intent" | "questions" | "loading" | "shelf" | "error";
 type AskableField = "priority" | "budget" | "state";
+type CartItem = {
+  id: string;
+  name: string;
+  price: number;
+  img: string;
+  quantity: number;
+};
 
+const CART_STORAGE_KEY = "rai-cart";
 const BUDGET_PRESETS = [500, 1000, 2000, 5000];
+
+function loadCart(): CartItem[] {
+  if (typeof window === "undefined") return [];
+
+  try {
+    const raw = window.localStorage.getItem(CART_STORAGE_KEY);
+    return raw ? (JSON.parse(raw) as CartItem[]) : [];
+  } catch {
+    return [];
+  }
+}
 
 const INDIAN_STATES = [
   "Andhra Pradesh",
@@ -234,12 +253,33 @@ function badgeForBullet(text: string, lang: ReturnType<typeof getText>) {
     color: "bg-primary-soft text-primary",
   };
 }
-function ProductCard({ item, onOpen, index, lang }: { item: Product; onOpen: (p: Product) => void; index: number; lang: ReturnType<typeof getText> }) {
+function ProductCard({
+  item,
+  onOpen,
+  onAddToCart,
+  index,
+  lang,
+}: {
+  item: Product;
+  onOpen: (p: Product) => void;
+  onAddToCart: (p: Product) => void;
+  index: number;
+  lang: ReturnType<typeof getText>;
+}) {
   const tint = TILE_TINTS[index % TILE_TINTS.length];
+
   return (
-    <button
+    <div
+      role="button"
+      tabIndex={0}
       onClick={() => onOpen(item)}
-      className="group fade-up card-hover flex flex-col text-left"
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          onOpen(item);
+        }
+      }}
+      className="group fade-up card-hover flex cursor-pointer flex-col text-left"
       style={{ animationDelay: `${index * 70}ms` }}
     >
       <div className={`relative overflow-hidden rounded-[1.75rem] ${tint} aspect-[4/5] flex items-center justify-center shadow-sm ring-1 ring-black/[0.04] transition-all duration-500 group-hover:shadow-xl group-hover:ring-primary/20`}>
@@ -251,9 +291,17 @@ function ProductCard({ item, onOpen, index, lang }: { item: Product; onOpen: (p:
             {lang.product.topPick}
           </span>
         )}
-        <span className="absolute right-4 top-4 grid h-9 w-9 place-items-center rounded-full bg-white/95 text-ink shadow-md backdrop-blur transition-all duration-300 hover:scale-110 hover:bg-primary hover:text-white hover:shadow-lg">
-          <Heart size={15} />
-        </span>
+        <button
+          type="button"
+          aria-label={`Add ${item.name} to cart`}
+          onClick={(e) => {
+            e.stopPropagation();
+            onAddToCart(item);
+          }}
+          className="absolute right-4 top-4 grid h-9 w-9 place-items-center rounded-full bg-white/95 text-ink shadow-md backdrop-blur transition-all duration-300 hover:scale-110 hover:bg-primary hover:text-white hover:shadow-lg"
+        >
+          <ShoppingBag size={15} />
+        </button>
         <div className="absolute bottom-4 left-4 flex items-center gap-2 rounded-2xl bg-ink/85 px-3 py-1.5 text-white shadow-xl backdrop-blur-sm">
           <ConfidenceRing value={item.score} size={32} />
           <div className="pr-2">
@@ -293,7 +341,7 @@ function ProductCard({ item, onOpen, index, lang }: { item: Product; onOpen: (p:
           </div>
         </div>
       </div>
-    </button>
+    </div>
   );
 }
 
@@ -412,6 +460,7 @@ function ProductDetail({
     item,
     onBack,
     onAskSomeone,
+    onAddToCart,
     lang,
     results,
     onOpen,
@@ -420,6 +469,7 @@ function ProductDetail({
     item: Product;
     onBack: () => void;
     onAskSomeone: (p: Product) => void;
+    onAddToCart: (p: Product) => void;
     lang: ReturnType<typeof getText>;
     results: Product[];
     onOpen: (p: Product) => void;
@@ -513,7 +563,11 @@ function ProductDetail({
           )}
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <button className="btn-primary inline-flex flex-1 items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-bold">
+            <button
+              type="button"
+              onClick={() => onAddToCart(item)}
+              className="btn-primary inline-flex flex-1 items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-bold"
+            >
               <ShoppingBag size={16} />
               {lang.product.addToBag}
             </button>
@@ -542,7 +596,14 @@ function ProductDetail({
 
           <div className="mt-6 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {similarProducts.map((p, i) => (
-              <ProductCard key={p.id} item={p} index={i + 1} onOpen={onOpen} lang={lang} />
+              <ProductCard
+                key={p.id}
+                item={p}
+                index={i + 1}
+                onOpen={onOpen}
+                onAddToCart={onAddToCart}
+                lang={lang}
+              />
             ))}
           </div>
         </div>
@@ -679,10 +740,12 @@ function Index() {
   const [scanned, setScanned] = useState<number | null>(null);
   const [openItem, setOpenItem] = useState<Product | null>(null);
   const [askModal, setAskModal] = useState<Product | null>(null);
+  const [cart, setCart] = useState<CartItem[]>(loadCart);
   const [errorMsg, setErrorMsg] = useState("");
   const [health, setHealth] = useState<Awaited<ReturnType<typeof api.health>> | null>(null);
   const [activeCat, setActiveCat] = useState("All");
   const inputRef = useRef<HTMLInputElement | null>(null);
+  const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
   const lang = getText(intent?.language);
   const currentQuestionSet = getQuestionSet(intent, lang);
   const filteredStates = INDIAN_STATES.filter((state) =>
@@ -694,8 +757,37 @@ function Index() {
   }, []);
 
   useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
+    }
+  }, [cart]);
+
+  useEffect(() => {
     if (stage === "intent") inputRef.current?.focus();
   }, [stage]);
+
+  const addToCart = (item: Product) => {
+    setCart((current) => {
+      const existing = current.find((cartItem) => cartItem.id === item.id);
+
+      if (existing) {
+        return current.map((cartItem) =>
+          cartItem.id === item.id ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem,
+        );
+      }
+
+      return [
+        ...current,
+        {
+          id: item.id,
+          name: item.name,
+          price: item.price,
+          img: item.img,
+          quantity: 1,
+        },
+      ];
+    });
+  };
 
   const fetchShortlist = async (finalIntent: Intent) => {
     setStage("loading");
@@ -793,6 +885,19 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
           </nav>
 
           <div className="flex items-center gap-3">
+            <button
+              type="button"
+              className="inline-flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-2 text-sm font-semibold text-ink shadow-sm transition hover:border-primary hover:text-primary"
+              aria-label="Cart"
+            >
+              <ShoppingBag size={15} />
+              <span>Cart</span>
+              {cartCount > 0 && (
+                <span className="grid min-w-5 place-items-center rounded-full bg-primary px-1.5 py-0.5 text-[10px] font-bold text-primary-foreground">
+                  {cartCount}
+                </span>
+              )}
+            </button>
             <StageBadge stage={stage} lang={lang} />
           </div>
         </div>
@@ -1165,7 +1270,14 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
             </div>
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {results.map((item, i) => (
-                <ProductCard key={item.id} item={item} index={i} onOpen={setOpenItem} lang={lang} />
+                <ProductCard
+                  key={item.id}
+                  item={item}
+                  index={i}
+                  onOpen={setOpenItem}
+                  onAddToCart={addToCart}
+                  lang={lang}
+                />
               ))}
             </div>
           </section>
@@ -1176,11 +1288,11 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
     item={openItem}
     onBack={() => setOpenItem(null)}
     onAskSomeone={setAskModal}
+    onAddToCart={addToCart}
     lang={lang}
     results={results}
     onOpen={setOpenItem}
     state={intent?.state}
-
   />
 )}
       </main>
