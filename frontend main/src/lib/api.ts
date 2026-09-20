@@ -28,10 +28,10 @@ export type Intent = {
   priority?: string | null;
   productType?: string | null;
   state?: string | null;
-  language?: string ;
+  language?: string;
   confidence?: number | null;
- 
-  translatedQuery?: string| null;
+
+  translatedQuery?: string | null;
 };
 
 export type Product = {
@@ -46,21 +46,25 @@ export type Product = {
   reviewNote?: string | null;
   regionalBoost?: number;
   breakdown?: {
-    value:number;
-    quality:number;
-    reviews:number;
-    seller:number;
-    occasion:number;
-    regional:number;
-};
+    value: number;
+    quality: number;
+    reviews: number;
+    seller: number;
+    occasion: number;
+    regional: number;
+  };
 };
 
 export const api = {
   extractIntent: (message: string): Promise<Intent> => post("/intent", { message }),
   getShortlist: (
     intent: Intent,
-  ): Promise<{ results: Product[]; scanned?: number; totalScanned?: number; productsScanned?: number }> =>
-    post("/shortlist", intent),
+  ): Promise<{
+    results: Product[];
+    scanned?: number;
+    totalScanned?: number;
+    productsScanned?: number;
+  }> => post("/shortlist", intent),
   askSomeone: (productId: string, recipient: string): Promise<{ id: string }> =>
     post("/ask-someone", { productId, recipient }),
   getShare: (id: string): Promise<{ status: string; reply?: { name: string; text: string } }> =>

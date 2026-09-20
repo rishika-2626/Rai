@@ -1,0 +1,11 @@
+{
+  "name": "rai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Rai - AI Shopping Concierge for Bharat",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "test:backend": "cd backend && npm test",
+    "test:frontend": "cd \"frontend main\" && npm run lint"
+  }
+}

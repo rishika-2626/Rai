@@ -259,7 +259,8 @@ const English: Translation = {
     next: "Next",
     under: "Under ₹{amount}",
     stateHeading: "Where are you shopping from?",
-    stateSubheading: "We'll personalize fabrics, styles and festive recommendations for your region.",
+    stateSubheading:
+      "We'll personalize fabrics, styles and festive recommendations for your region.",
     stateSearchPlaceholder: "Search your state...",
     noStateFound: "No matching state found.",
     budgetQuestions: {
@@ -362,7 +363,8 @@ const English: Translation = {
     whyWorthIt: "Why this is worth it",
     regionalMatch: "Regional Match",
     regionalMatchBody: "This product matches shopping preferences commonly seen in {state}.",
-    scoreDisclaimer: "Score computed by a trained logistic regression model — not a hand-set formula.",
+    scoreDisclaimer:
+      "Score computed by a trained logistic regression model — not a hand-set formula.",
   },
 
   breakdown: {
@@ -395,7 +397,8 @@ const English: Translation = {
 
   askSomeone: {
     title: "Ask someone",
-    description: "Share this pick with someone you trust before you buy. We'll keep the conversation right here.",
+    description:
+      "Share this pick with someone you trust before you buy. We'll keep the conversation right here.",
     sendTo: "Send to {name}",
     sending: "Sending…",
     sentTo: "Sent to {name}",
@@ -463,7 +466,8 @@ const Hindi: Translation = {
     confidenceEngineBody:
       "सैकड़ों उत्पाद दिखाने के बजाय, Rai वैल्यू, क्वालिटी, भरोसे, रिव्यूज़ और फिट की तुलना करके सिर्फ वही सुझाता है जो खरीदने लायक हों।",
     contextAwareTitle: "संदर्भ के अनुसार",
-    contextAwareBody: "राखी की शॉपिंग ऑफिस के पहले दिन जैसी नहीं होती। Rai सुझाव देने से पहले यह समझता है।",
+    contextAwareBody:
+      "राखी की शॉपिंग ऑफिस के पहले दिन जैसी नहीं होती। Rai सुझाव देने से पहले यह समझता है।",
     askSomeoneTitle: "किसी से पूछें",
     askSomeoneBody:
       "खरीदने से पहले अपनी पसंद किसी भरोसेमंद व्यक्ति के साथ साझा करें, ठीक वैसे ही जैसे लाखों भारतीय शॉपर्स पहले से करते हैं।",
@@ -548,7 +552,11 @@ const Hindi: Translation = {
   },
 
   loading: {
-    steps: ["कैटलॉग स्कैन हो रहा है", "ValueIQ से स्कोरिंग हो रही है", "आपकी शॉर्टलिस्ट तैयार हो रही है"],
+    steps: [
+      "कैटलॉग स्कैन हो रहा है",
+      "ValueIQ से स्कोरिंग हो रही है",
+      "आपकी शॉर्टलिस्ट तैयार हो रही है",
+    ],
     caption: "जो वाकई खरीदने लायक हैं, वो खोजे जा रहे हैं…",
   },
 
@@ -586,7 +594,8 @@ const Hindi: Translation = {
     whyWorthIt: "यह क्यों सही खरीद है",
     regionalMatch: "क्षेत्रीय मेल",
     regionalMatchBody: "यह उत्पाद {state} में आमतौर पर देखी जाने वाली शॉपिंग पसंद से मेल खाता है।",
-    scoreDisclaimer: "स्कोर एक प्रशिक्षित लॉजिस्टिक रिग्रेशन मॉडल से निकाला गया है — किसी तय किए गए फॉर्मूले से नहीं।",
+    scoreDisclaimer:
+      "स्कोर एक प्रशिक्षित लॉजिस्टिक रिग्रेशन मॉडल से निकाला गया है — किसी तय किए गए फॉर्मूले से नहीं।",
   },
 
   breakdown: {
@@ -690,7 +699,8 @@ const Telugu: Translation = {
     contextAwareBody:
       "రాఖీ కోసం షాపింగ్ చేయడం మీ మొదటి ఆఫీస్ రోజు కోసం చేయడం లాంటిది కాదు. సిఫార్సు చేసే ముందు Rai దీన్ని అర్థం చేసుకుంటుంది.",
     askSomeoneTitle: "ఎవరినైనా అడగండి",
-    askSomeoneBody: "కొనే ముందు మీ ఎంపికను నమ్మకమైన వ్యక్తితో పంచుకోండి, లక్షలాది భారతీయ షాపర్లు ఇప్పటికే చేస్తున్నట్టు.",
+    askSomeoneBody:
+      "కొనే ముందు మీ ఎంపికను నమ్మకమైన వ్యక్తితో పంచుకోండి, లక్షలాది భారతీయ షాపర్లు ఇప్పటికే చేస్తున్నట్టు.",
   },
 
   stageBadges: {
@@ -707,7 +717,8 @@ const Telugu: Translation = {
     next: "తదుపరి",
     under: "₹{amount}లోపు",
     stateHeading: "మీరు ఏ రాష్ట్రం నుండి షాపింగ్ చేస్తున్నారు?",
-    stateSubheading: "మీ ప్రాంతానికి అనుగుణంగా ఫ్యాబ్రిక్‌లు, స్టైల్స్ మరియు పండుగ సిఫార్సులను పర్సనలైజ్ చేస్తాము.",
+    stateSubheading:
+      "మీ ప్రాంతానికి అనుగుణంగా ఫ్యాబ్రిక్‌లు, స్టైల్స్ మరియు పండుగ సిఫార్సులను పర్సనలైజ్ చేస్తాము.",
     stateSearchPlaceholder: "మీ రాష్ట్రాన్ని వెతకండి...",
     noStateFound: "సరిపోలే రాష్ట్రం కనుగొనబడలేదు.",
     budgetQuestions: {
@@ -772,7 +783,11 @@ const Telugu: Translation = {
   },
 
   loading: {
-    steps: ["కేటలాగ్ స్కాన్ చేస్తోంది", "ValueIQతో స్కోర్ చేస్తోంది", "మీ షార్ట్‌లిస్ట్ సిద్ధం చేస్తోంది"],
+    steps: [
+      "కేటలాగ్ స్కాన్ చేస్తోంది",
+      "ValueIQతో స్కోర్ చేస్తోంది",
+      "మీ షార్ట్‌లిస్ట్ సిద్ధం చేస్తోంది",
+    ],
     caption: "నిజంగా కొనదగినవి వెతుకుతోంది…",
   },
 

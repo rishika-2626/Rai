@@ -29,8 +29,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Rai — Shop with confidence" },
       {
         property: "og:description",
-        content:
-          "Six best-value picks, scored by ValueIQ. Ask someone you trust before you buy.",
+        content: "Six best-value picks, scored by ValueIQ. Ask someone you trust before you buy.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -103,11 +102,7 @@ function getQuestionSet(intent: Intent | null, lang: ReturnType<typeof getText>)
     return lang.questions.sets.festive;
   }
 
-  if (
-    product.includes("shoe") ||
-    product.includes("sneaker") ||
-    product.includes("footwear")
-  ) {
+  if (product.includes("shoe") || product.includes("sneaker") || product.includes("footwear")) {
     return lang.questions.sets.footwear;
   }
 
@@ -146,7 +141,14 @@ function ConfidenceRing({ value, size = 52 }: { value: number; size?: number }) 
   return (
     <div className="relative shrink-0" style={{ width: size, height: size }}>
       <svg width={size} height={size} className="-rotate-90">
-        <circle cx={size / 2} cy={size / 2} r={r} stroke="rgba(255,255,255,0.35)" strokeWidth={stroke} fill="none" />
+        <circle
+          cx={size / 2}
+          cy={size / 2}
+          r={r}
+          stroke="rgba(255,255,255,0.35)"
+          strokeWidth={stroke}
+          fill="none"
+        />
         <circle
           cx={size / 2}
           cy={size / 2}
@@ -234,7 +236,17 @@ function badgeForBullet(text: string, lang: ReturnType<typeof getText>) {
     color: "bg-primary-soft text-primary",
   };
 }
-function ProductCard({ item, onOpen, index, lang }: { item: Product; onOpen: (p: Product) => void; index: number; lang: ReturnType<typeof getText> }) {
+function ProductCard({
+  item,
+  onOpen,
+  index,
+  lang,
+}: {
+  item: Product;
+  onOpen: (p: Product) => void;
+  index: number;
+  lang: ReturnType<typeof getText>;
+}) {
   const tint = TILE_TINTS[index % TILE_TINTS.length];
   return (
     <button
@@ -242,7 +254,9 @@ function ProductCard({ item, onOpen, index, lang }: { item: Product; onOpen: (p:
       className="group fade-up card-hover flex flex-col text-left"
       style={{ animationDelay: `${index * 70}ms` }}
     >
-      <div className={`relative overflow-hidden rounded-[1.75rem] ${tint} aspect-[4/5] flex items-center justify-center shadow-sm ring-1 ring-black/[0.04] transition-all duration-500 group-hover:shadow-xl group-hover:ring-primary/20`}>
+      <div
+        className={`relative overflow-hidden rounded-[1.75rem] ${tint} aspect-[4/5] flex items-center justify-center shadow-sm ring-1 ring-black/[0.04] transition-all duration-500 group-hover:shadow-xl group-hover:ring-primary/20`}
+      >
         <div className="text-[110px] leading-none transition-transform duration-700 ease-out group-hover:scale-110">
           {item.img}
         </div>
@@ -258,7 +272,9 @@ function ProductCard({ item, onOpen, index, lang }: { item: Product; onOpen: (p:
           <ConfidenceRing value={item.score} size={32} />
           <div className="pr-2">
             <div className="text-[9px] uppercase tracking-widest opacity-75">ValueIQ</div>
-            <div className="text-[11px] font-bold">{item.worthItLabel ?? lang.product.excellentBuy}</div>
+            <div className="text-[11px] font-bold">
+              {item.worthItLabel ?? lang.product.excellentBuy}
+            </div>
           </div>
         </div>
       </div>
@@ -273,7 +289,10 @@ function ProductCard({ item, onOpen, index, lang }: { item: Product; onOpen: (p:
               {item.bullets.slice(0, 2).map((bullet) => {
                 const badge = badgeForBullet(bullet, lang);
                 return (
-                  <span key={bullet} className={`rounded-full px-2.5 py-1 text-[11px] font-semibold ${badge.color}`}>
+                  <span
+                    key={bullet}
+                    className={`rounded-full px-2.5 py-1 text-[11px] font-semibold ${badge.color}`}
+                  >
                     {badge.emoji} {badge.label}
                   </span>
                 );
@@ -314,7 +333,7 @@ function getSimilarProducts(current: Product, allResults: Product[]): Product[] 
   });
 
   const withinBudget = sameGroup.filter(
-    (p) => Math.abs(p.price - current.price) <= current.price * 0.25
+    (p) => Math.abs(p.price - current.price) <= current.price * 0.25,
   );
   const withinBudgetIds = new Set(withinBudget.map((p) => p.id));
   const restOfGroup = sameGroup.filter((p) => !withinBudgetIds.has(p.id));
@@ -328,15 +347,7 @@ function getSimilarProducts(current: Product, allResults: Product[]): Product[] 
 
   return [...ranked, ...closestOverall].slice(0, 3);
 }
-function BreakdownBar({
-  icon,
-  label,
-  value,
-}: {
-  icon: string;
-  label: string;
-  value: number;
-}) {
+function BreakdownBar({ icon, label, value }: { icon: string; label: string; value: number }) {
   return (
     <div className="space-y-2">
       <div className="flex justify-between text-sm">
@@ -409,21 +420,21 @@ function StageBadge({ stage, lang }: { stage: Stage; lang: ReturnType<typeof get
 }
 
 function ProductDetail({
-    item,
-    onBack,
-    onAskSomeone,
-    lang,
-    results,
-    onOpen,
-    state,
+  item,
+  onBack,
+  onAskSomeone,
+  lang,
+  results,
+  onOpen,
+  state,
 }: {
-    item: Product;
-    onBack: () => void;
-    onAskSomeone: (p: Product) => void;
-    lang: ReturnType<typeof getText>;
-    results: Product[];
-    onOpen: (p: Product) => void;
-    state?: string;
+  item: Product;
+  onBack: () => void;
+  onAskSomeone: (p: Product) => void;
+  lang: ReturnType<typeof getText>;
+  results: Product[];
+  onOpen: (p: Product) => void;
+  state?: string;
 }) {
   const similarProducts = getSimilarProducts(item, results);
   return (
@@ -432,7 +443,8 @@ function ProductDetail({
         onClick={onBack}
         className="group mb-8 inline-flex items-center gap-2 rounded-full border border-line bg-surface px-4 py-2 text-sm font-semibold text-ink transition-all hover:border-primary hover:bg-primary-soft/40 hover:text-primary"
       >
-        <ArrowLeft size={15} className="transition-transform group-hover:-translate-x-0.5" /> {lang.product.back}
+        <ArrowLeft size={15} className="transition-transform group-hover:-translate-x-0.5" />{" "}
+        {lang.product.back}
       </button>
 
       <div className="grid gap-10 md:grid-cols-2">
@@ -444,7 +456,9 @@ function ProductDetail({
         </div>
 
         <div className="flex flex-col">
-          <h2 className="font-display text-3xl font-medium leading-tight text-ink md:text-4xl">{item.name}</h2>
+          <h2 className="font-display text-3xl font-medium leading-tight text-ink md:text-4xl">
+            {item.name}
+          </h2>
 
           <div className="mt-4 flex items-center gap-2">
             {[1, 2, 3, 4, 5].map((i) => (
@@ -459,7 +473,9 @@ function ProductDetail({
             <span className="font-mono-tight text-4xl font-bold text-primary">₹{item.price}</span>
             {!!item.comparableAvg && item.comparableAvg > item.price && (
               <>
-                <span className="font-mono-tight text-sm text-ink-soft line-through">₹{item.comparableAvg}</span>
+                <span className="font-mono-tight text-sm text-ink-soft line-through">
+                  ₹{item.comparableAvg}
+                </span>
                 <span className="rounded-full bg-forest-soft px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-forest">
                   {lang.product.save} ₹{item.comparableAvg - item.price}
                 </span>
@@ -472,7 +488,9 @@ function ProductDetail({
               <div className="font-mono-tight text-[10.5px] font-bold uppercase tracking-[0.2em] text-primary">
                 {lang.product.whyWorthIt}
               </div>
-              <p className="mt-2 font-display text-lg italic leading-snug text-ink">&ldquo;{item.reviewNote}&rdquo;</p>
+              <p className="mt-2 font-display text-lg italic leading-snug text-ink">
+                &ldquo;{item.reviewNote}&rdquo;
+              </p>
             </div>
           )}
 
@@ -501,12 +519,32 @@ function ProductDetail({
               <p className="mb-5 mt-1 text-sm text-ink-muted">{lang.breakdown.subheading}</p>
               <div className="space-y-4">
                 <BreakdownBar icon="💰" label={lang.breakdown.value} value={item.breakdown.value} />
-                <BreakdownBar icon="⭐" label={lang.breakdown.quality} value={item.breakdown.quality} />
-                <BreakdownBar icon="📝" label={lang.breakdown.reviews} value={item.breakdown.reviews} />
-                <BreakdownBar icon="🏪" label={lang.breakdown.sellerTrust} value={item.breakdown.seller} />
-                <BreakdownBar icon="🎯" label={lang.breakdown.occasionMatch} value={item.breakdown.occasion} />
+                <BreakdownBar
+                  icon="⭐"
+                  label={lang.breakdown.quality}
+                  value={item.breakdown.quality}
+                />
+                <BreakdownBar
+                  icon="📝"
+                  label={lang.breakdown.reviews}
+                  value={item.breakdown.reviews}
+                />
+                <BreakdownBar
+                  icon="🏪"
+                  label={lang.breakdown.sellerTrust}
+                  value={item.breakdown.seller}
+                />
+                <BreakdownBar
+                  icon="🎯"
+                  label={lang.breakdown.occasionMatch}
+                  value={item.breakdown.occasion}
+                />
                 {item.breakdown.regional > 0 && (
-                  <BreakdownBar icon="📍" label={lang.breakdown.regionalMatch} value={item.breakdown.regional} />
+                  <BreakdownBar
+                    icon="📍"
+                    label={lang.breakdown.regionalMatch}
+                    value={item.breakdown.regional}
+                  />
                 )}
               </div>
             </div>
@@ -536,9 +574,7 @@ function ProductDetail({
           <h2 className="font-display text-2xl font-medium text-ink">
             {lang.explanations.similarProducts}
           </h2>
-          <p className="mt-1.5 text-[13px] text-ink-muted">
-            {lang.explanations.youMayAlsoLike}
-          </p>
+          <p className="mt-1.5 text-[13px] text-ink-muted">{lang.explanations.youMayAlsoLike}</p>
 
           <div className="mt-6 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {similarProducts.map((p, i) => (
@@ -590,9 +626,7 @@ function AskSomeoneModal({
 
   const getWhatsAppShareUrl = () => {
     const bulletSummary =
-      item.bullets && item.bullets.length > 0
-        ? `\n• ${item.bullets.slice(0, 2).join("\n• ")}`
-        : "";
+      item.bullets && item.bullets.length > 0 ? `\n• ${item.bullets.slice(0, 2).join("\n• ")}` : "";
     const text = `Hey! Check out this recommendation I found on Rai AI Shopping Concierge:\n\n🛍️ *${item.name}*\n💰 Price: ₹${item.price.toLocaleString("en-IN")}\n⭐ ValueIQ Score: ${item.score}/100${bulletSummary}\n\nWhat do you think? Should I buy this?`;
     return `https://wa.me/?text=${encodeURIComponent(text)}`;
   };
@@ -629,7 +663,9 @@ function AskSomeoneModal({
               {lang.askSomeone.description}
             </p>
             <div className="mb-5 flex items-center gap-3 rounded-2xl border border-line bg-primary-soft/40 p-3">
-              <div className="grid h-12 w-12 place-items-center rounded-xl bg-surface text-2xl shadow-sm">{item.img}</div>
+              <div className="grid h-12 w-12 place-items-center rounded-xl bg-surface text-2xl shadow-sm">
+                {item.img}
+              </div>
               <div className="text-[13px] font-medium leading-snug text-ink">{item.name}</div>
             </div>
             <div className="flex flex-col gap-2.5">
@@ -660,7 +696,8 @@ function AskSomeoneModal({
         {(status === "pending" || status === "replied") && (
           <div>
             <div className="mb-4 flex items-center gap-2 rounded-full bg-surface-muted px-3 py-2 text-[12.5px] text-ink-soft">
-              <MessageCircle size={13} className="text-primary" /> {lang.askSomeone.sentTo.replace("{name}", "Didi")}
+              <MessageCircle size={13} className="text-primary" />{" "}
+              {lang.askSomeone.sentTo.replace("{name}", "Didi")}
             </div>
             {status === "pending" ? (
               <div className="flex items-center gap-2 py-4 text-[13.5px] italic text-ink-soft">
@@ -705,11 +742,14 @@ function Index() {
   const lang = getText(intent?.language);
   const currentQuestionSet = getQuestionSet(intent, lang);
   const filteredStates = INDIAN_STATES.filter((state) =>
-  state.toLowerCase().includes(stateSearch.toLowerCase())
-);
+    state.toLowerCase().includes(stateSearch.toLowerCase()),
+  );
 
   useEffect(() => {
-    api.health().then(setHealth).catch(() => setHealth({ ok: false }));
+    api
+      .health()
+      .then(setHealth)
+      .catch(() => setHealth({ ok: false }));
   }, []);
 
   useEffect(() => {
@@ -721,10 +761,10 @@ function Index() {
     try {
       const { results, scanned, totalScanned, productsScanned } = await api.getShortlist({
         occasion: finalIntent.occasion,
-    budget: finalIntent.budget,
-    priority: finalIntent.priority,
-    productType: finalIntent.productType,
-    state: finalIntent.state,
+        budget: finalIntent.budget,
+        priority: finalIntent.priority,
+        productType: finalIntent.productType,
+        state: finalIntent.state,
       });
       setResults(results);
       setScanned(scanned ?? totalScanned ?? productsScanned ?? null);
@@ -744,16 +784,14 @@ function Index() {
       setIntent(extracted);
       const missing: AskableField[] = [];
 
-if (!extracted.priority)
-    missing.push("priority");
+      if (!extracted.priority) missing.push("priority");
 
-if (!extracted.budget)
-    missing.push("budget");
+      if (!extracted.budget) missing.push("budget");
 
-// Ask only if Rai couldn't confidently infer it.
-if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
-    missing.push("state");
-}
+      // Ask only if Rai couldn't confidently infer it.
+      if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
+        missing.push("state");
+      }
       setMissingFields(missing);
       if (missing.length === 0) fetchShortlist(extracted);
     } catch (err) {
@@ -790,7 +828,10 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
     <div className="min-h-screen page-bg bg-background">
       <header className="glass sticky top-0 z-30 border-b border-line/80">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3.5 sm:px-6 sm:py-4">
-          <button onClick={reset} className="group flex items-center gap-2.5 transition-opacity hover:opacity-80">
+          <button
+            onClick={reset}
+            className="group flex items-center gap-2.5 transition-opacity hover:opacity-80"
+          >
             <div className="grid h-10 w-10 place-items-center rounded-2xl bg-primary font-display text-xl font-bold text-primary-foreground shadow-md transition-transform group-hover:scale-105">
               R
             </div>
@@ -804,7 +845,9 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
 
           <nav className="hidden md:flex">
             <button
-              onClick={() => document.getElementById("how-it-works")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() =>
+                document.getElementById("how-it-works")?.scrollIntoView({ behavior: "smooth" })
+              }
               className="rounded-full px-4 py-2 text-sm font-semibold text-ink-muted transition hover:bg-primary-soft/60 hover:text-primary"
             >
               {lang.nav.howItWorks}
@@ -827,7 +870,8 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
                     <Sparkles size={12} /> {lang.hero.badge}
                   </div>
                   <h1 className="mt-5 font-display text-[40px] font-medium leading-[1.02] tracking-tight sm:text-[58px]">
-                    {lang.hero.titleLine1} <em className="not-italic text-accent">{lang.hero.titleEmphasis}</em>{" "}
+                    {lang.hero.titleLine1}{" "}
+                    <em className="not-italic text-accent">{lang.hero.titleEmphasis}</em>{" "}
                     {lang.hero.titleLine2}
                   </h1>
                   <p className="mt-5 max-w-lg text-[15px] leading-relaxed text-white/90">
@@ -899,7 +943,9 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
                           <div className="font-mono-tight text-[12px] font-bold uppercase tracking-wider text-forest">
                             {lang.product.worthIt} · 92
                           </div>
-                          <div className="text-[13px] text-ink-muted">{lang.hero.floatingCaption}</div>
+                          <div className="text-[13px] text-ink-muted">
+                            {lang.hero.floatingCaption}
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -914,7 +960,9 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
 
             <section className="mt-14 fade-up" style={{ animationDelay: "120ms" }}>
               <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
-                <h2 className="font-display text-2xl font-medium text-ink">{lang.categoriesSection.heading}</h2>
+                <h2 className="font-display text-2xl font-medium text-ink">
+                  {lang.categoriesSection.heading}
+                </h2>
                 <span className="font-mono-tight text-[10.5px] uppercase tracking-[0.22em] text-ink-soft">
                   {lang.categoriesSection.subheading}
                 </span>
@@ -946,7 +994,11 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
               </div>
             </section>
 
-            <section id="how-it-works" className="mt-14 grid gap-4 sm:grid-cols-3 fade-up" style={{ animationDelay: "200ms" }}>
+            <section
+              id="how-it-works"
+              className="mt-14 grid gap-4 sm:grid-cols-3 fade-up"
+              style={{ animationDelay: "200ms" }}
+            >
               {[
                 {
                   title: lang.features.confidenceEngineTitle,
@@ -990,7 +1042,9 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
                   <div key={field} className="flex flex-1 flex-col gap-1.5">
                     <div
                       className="h-1.5 rounded-full transition-all duration-500"
-                      style={{ background: i <= qIndex ? "var(--color-primary)" : "var(--color-line)" }}
+                      style={{
+                        background: i <= qIndex ? "var(--color-primary)" : "var(--color-line)",
+                      }}
                     />
                     <span
                       className={`font-mono-tight text-[9px] uppercase tracking-wider ${
@@ -1013,9 +1067,7 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
                 <h2 className="mt-8 font-display text-[30px] font-medium leading-tight text-ink sm:text-[32px]">
                   {getBudgetQuestion(intent, lang)}
                 </h2>
-                <p className="mt-2 text-[13.5px] text-ink-muted">
-                  {lang.questions.budgetHelper}
-                </p>
+                <p className="mt-2 text-[13.5px] text-ink-muted">{lang.questions.budgetHelper}</p>
 
                 <div className="mt-6 flex items-center gap-2 rounded-full border border-line bg-surface p-1.5 pl-5 shadow-sm ring-1 ring-transparent transition focus-within:border-primary focus-within:ring-primary/20">
                   <span className="font-mono-tight text-[15px] text-ink-soft">₹</span>
@@ -1060,7 +1112,10 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
                 </p>
 
                 <div className="relative mt-6">
-                  <Search size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-ink-soft" />
+                  <Search
+                    size={16}
+                    className="absolute left-4 top-1/2 -translate-y-1/2 text-ink-soft"
+                  />
                   <input
                     autoFocus
                     value={stateSearch}
@@ -1124,10 +1179,15 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
 
         {stage === "error" && (
           <div className="mx-auto mt-24 max-w-md text-center fade-up">
-            <div className="mx-auto mb-5 grid h-16 w-16 place-items-center rounded-full bg-primary-soft text-3xl">😔</div>
+            <div className="mx-auto mb-5 grid h-16 w-16 place-items-center rounded-full bg-primary-soft text-3xl">
+              😔
+            </div>
             <div className="font-display text-xl text-primary">{lang.errors.title}</div>
             <p className="mt-2 text-[13.5px] text-ink-muted">{errorMsg}</p>
-            <button onClick={reset} className="btn-primary mt-6 rounded-full px-6 py-2.5 text-sm font-bold">
+            <button
+              onClick={reset}
+              className="btn-primary mt-6 rounded-full px-6 py-2.5 text-sm font-bold"
+            >
               {lang.errors.tryAgain}
             </button>
           </div>
@@ -1169,7 +1229,7 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
                 <span className="text-sm font-semibold">
                   {lang.shelf.comparedProductsChip.replace(
                     "{count}",
-                    scanned?.toLocaleString("en-IN") ?? "802"
+                    scanned?.toLocaleString("en-IN") ?? "802",
                   )}
                 </span>
               </div>
@@ -1191,17 +1251,16 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
         )}
 
         {stage === "shelf" && openItem && (
-  <ProductDetail
-    item={openItem}
-    onBack={() => setOpenItem(null)}
-    onAskSomeone={setAskModal}
-    lang={lang}
-    results={results}
-    onOpen={setOpenItem}
-    state={intent?.state}
-
-  />
-)}
+          <ProductDetail
+            item={openItem}
+            onBack={() => setOpenItem(null)}
+            onAskSomeone={setAskModal}
+            lang={lang}
+            results={results}
+            onOpen={setOpenItem}
+            state={intent?.state}
+          />
+        )}
       </main>
 
       <footer className="mt-auto border-t border-line bg-surface/50">
@@ -1220,7 +1279,9 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
         </div>
       </footer>
 
-      {askModal && <AskSomeoneModal item={askModal} onClose={() => setAskModal(null)} lang={lang} />}
+      {askModal && (
+        <AskSomeoneModal item={askModal} onClose={() => setAskModal(null)} lang={lang} />
+      )}
     </div>
   );
 }

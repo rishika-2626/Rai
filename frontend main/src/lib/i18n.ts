@@ -11,18 +11,13 @@ export const DEFAULT_LANGUAGE: SupportedLanguage = "English";
 export function getText(language?: string): Translation {
   if (!language) return translations[DEFAULT_LANGUAGE];
 
-  return (
-    translations[language as SupportedLanguage] ??
-    translations[DEFAULT_LANGUAGE]
-  );
+  return translations[language as SupportedLanguage] ?? translations[DEFAULT_LANGUAGE];
 }
 
 /**
  * Type guard.
  */
-export function isSupportedLanguage(
-  language?: string
-): language is SupportedLanguage {
+export function isSupportedLanguage(language?: string): language is SupportedLanguage {
   return !!language && language in translations;
 }
 
@@ -30,6 +25,4 @@ export function isSupportedLanguage(
  * Returns all supported languages.
  * Useful if you add a language picker later.
  */
-export const supportedLanguages = Object.keys(
-  translations
-) as SupportedLanguage[];
+export const supportedLanguages = Object.keys(translations) as SupportedLanguage[];
