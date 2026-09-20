@@ -357,7 +357,7 @@ function scoreProduct(product, intent = {}) {
         ? clamp0to100(rankingSignals.returnRatePercent)
         : NEUTRAL_RETURN_RATE_PERCENT,
     priceCompetitivenessPercent: rankingSignals.priceCompetitivenessPercent ?? 0,
-    occasion: intent.occasion || (Array.isArray(safeProduct.occasion) ? safeProduct.occasion[0] : null) || null,
+    occasion: intent.occasion || null,
   };
 
   return {
