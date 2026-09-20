@@ -852,6 +852,19 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
                       placeholder={lang.hero.searchPlaceholder}
                       className="flex-1 bg-transparent py-2.5 text-[14.5px] text-ink placeholder:text-ink-soft focus:outline-none"
                     />
+                    {inputValue && (
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setInputValue("");
+                          inputRef.current?.focus();
+                        }}
+                        aria-label="Clear search"
+                        className="grid h-7 w-7 shrink-0 place-items-center rounded-full text-ink-soft transition-colors hover:bg-surface-muted hover:text-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+                      >
+                        <X size={15} />
+                      </button>
+                    )}
                     <button
                       onClick={() => inputValue.trim() && !isSubmitting && submitIntent(inputValue.trim())}
                       disabled={isSubmitting || !inputValue.trim()}
