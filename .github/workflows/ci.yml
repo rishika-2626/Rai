@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Run Automated Tests & Checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: |
+            backend/package-lock.json
+            frontend main/package-lock.json
+
+      - name: Install Backend Dependencies
+        run: |
+          cd backend
+          npm ci || npm install
+
+      - name: Run Backend & Service Tests
+        run: |
+          cd backend
+          npm test
+
+      - name: Install Frontend Dependencies
+        run: |
+          cd "frontend main"
+          npm ci || npm install
+
+      - name: Run Frontend Lint & Checks
+        run: |
+          cd "frontend main"
+          npm run lint

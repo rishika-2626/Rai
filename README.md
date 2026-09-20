@@ -10,6 +10,7 @@ Built for **Myntra HackerRamp 2026** · Theme: *The Bharat opportunity*
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-rai--orpin.vercel.app-FF4D5E?style=for-the-badge&logo=vercel&logoColor=white)](https://rai-orpin.vercel.app)
 
+![CI Status](https://github.com/rishika-2626/Rai/actions/workflows/ci.yml/badge.svg)
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
@@ -326,9 +327,26 @@ npm install
 npm run dev
 
 # Frontend (in a new terminal)
-cd frontend
+cd "frontend main"
 npm install
 npm run dev
+```
+
+### 🧪 Running Tests
+
+To run the automated test suite locally:
+
+```bash
+# Run all unit and API tests
+npm test
+
+# Run backend tests directly
+cd backend
+npm test
+
+# Run frontend lint & checks
+cd "frontend main"
+npm run lint
 ```
 
 <br/>

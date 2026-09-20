@@ -6,7 +6,8 @@
   "main": "server.js",
   "scripts": {
     "dev": "node --watch server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "node --test ../tests/*.test.js"
   },
   "dependencies": {
     "@google/genai": "^2.12.0",
