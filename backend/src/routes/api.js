@@ -130,7 +130,7 @@ const diverseTop6 = selectDiverseTop(regionBoosted, { limit: 6 });
   occasion: Math.round(rawFeatures.occasionMatch),
 
   regional: regionalBoost
-    ? Math.min(100, Math.round(regionalBoost * 20))
+    ? Math.max(0, Math.min(100, Math.round(regionalBoost * 20)))
     : 0,
 };
         return {

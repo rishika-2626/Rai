@@ -296,7 +296,7 @@ const English: Translation = {
         options: [
           { label: "Comfort", value: "comfort", emoji: "☁️" },
           { label: "Durability", value: "durability", emoji: "🛡️" },
-          { label: "Performance", value: "delivery", emoji: "🏃" },
+          { label: "Performance", value: "premium", emoji: "🏃" },
           { label: "Best value", value: "value", emoji: "💰" },
         ],
       },
@@ -520,7 +520,7 @@ const Hindi: Translation = {
         options: [
           { label: "आराम", value: "comfort", emoji: "☁️" },
           { label: "मज़बूती", value: "durability", emoji: "🛡️" },
-          { label: "परफॉर्मेंस", value: "delivery", emoji: "🏃" },
+          { label: "परफॉर्मेंस", value: "premium", emoji: "🏃" },
           { label: "बेहतरीन वैल्यू", value: "value", emoji: "💰" },
         ],
       },
@@ -744,7 +744,7 @@ const Telugu: Translation = {
         options: [
           { label: "సౌకర్యం", value: "comfort", emoji: "☁️" },
           { label: "మన్నిక", value: "durability", emoji: "🛡️" },
-          { label: "పనితీరు", value: "delivery", emoji: "🏃" },
+          { label: "పనితీరు", value: "premium", emoji: "🏃" },
           { label: "గొప్ప విలువ", value: "value", emoji: "💰" },
         ],
       },

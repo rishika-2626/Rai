@@ -109,8 +109,8 @@ Schema:
 
   "translatedQuery": string,
 
-  "state": string or null
-   "confidence": number | null
+  "state": string or null,
+  "confidence": number | null
 }
 
 Rules:
