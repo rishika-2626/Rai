@@ -6,7 +6,26 @@ const { hasApiKey } = require("./src/services/llm");
 
 const app = express();
 
-app.use(cors());
+// Restrict CORS to the known frontend origin(s). Configure via CORS_ORIGINS
+// (comma-separated); defaults to the deployed frontend plus local dev.
+const allowedOrigins = (
+  process.env.CORS_ORIGINS ||
+  "https://rai-orpin.vercel.app,http://localhost:5173"
+)
+  .split(",")
+  .map((origin) => origin.trim())
+  .filter(Boolean);
+
+app.use(
+  cors({
+    origin(origin, callback) {
+      // Allow non-browser clients (no Origin header) and allow-listed origins.
+      if (!origin || allowedOrigins.includes(origin)) return callback(null, true);
+      return callback(new Error(`Origin ${origin} not allowed by CORS`));
+    },
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use("/api", apiRoutes);
 
