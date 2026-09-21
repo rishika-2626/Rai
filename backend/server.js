@@ -23,7 +23,6 @@ app.use(
       if (!origin || allowedOrigins.includes(origin)) return callback(null, true);
       return callback(new Error(`Origin ${origin} not allowed by CORS`));
     },
-    credentials: true,
   })
 );
 app.use(express.json());
