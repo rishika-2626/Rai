@@ -8,7 +8,22 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+// Health check for uptime monitors / platform probes.
+app.get("/health", (req, res) => {
+  res.status(200).json({
+    status: "ok",
+    uptime: process.uptime(),
+    timestamp: new Date().toISOString(),
+  });
+});
+
 app.use("/api", apiRoutes);
+
+// JSON 404 for unmatched routes, consistent with the rest of the API.
+app.use((req, res) => {
+  res.status(404).json({ error: "Not found" });
+});
 
 const PORT = process.env.PORT || 4000;
 
