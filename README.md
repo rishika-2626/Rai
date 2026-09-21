@@ -326,7 +326,7 @@ npm install
 npm run dev
 
 # Frontend (in a new terminal)
-cd frontend
+cd "frontend main"
 npm install
 npm run dev
 ```
