@@ -701,6 +701,7 @@ function Index() {
   const [errorMsg, setErrorMsg] = useState("");
   const [health, setHealth] = useState<Awaited<ReturnType<typeof api.health>> | null>(null);
   const [activeCat, setActiveCat] = useState("All");
+  const [savedStatePref, setSavedStatePref] = useState<string | null>(null);
   const inputRef = useRef<HTMLInputElement | null>(null);
   const lang = getText(intent?.language);
   const currentQuestionSet = getQuestionSet(intent, lang);
@@ -710,6 +711,10 @@ function Index() {
 
   useEffect(() => {
     api.health().then(setHealth).catch(() => setHealth({ ok: false }));
+    if (typeof window !== "undefined") {
+      const stored = localStorage.getItem("rai_user_state");
+      if (stored) setSavedStatePref(stored);
+    }
   }, []);
 
   useEffect(() => {
@@ -744,16 +749,21 @@ function Index() {
       setIntent(extracted);
       const missing: AskableField[] = [];
 
-if (!extracted.priority)
-    missing.push("priority");
+      const storedState = typeof window !== "undefined" ? localStorage.getItem("rai_user_state") : null;
+      if (!extracted.state && storedState) {
+        extracted.state = storedState;
+      }
 
-if (!extracted.budget)
-    missing.push("budget");
+      if (!extracted.priority)
+        missing.push("priority");
 
-// Ask only if Rai couldn't confidently infer it.
-if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
-    missing.push("state");
-}
+      if (!extracted.budget)
+        missing.push("budget");
+
+      // Ask only if Rai couldn't confidently infer it.
+      if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
+        missing.push("state");
+      }
       setMissingFields(missing);
       if (missing.length === 0) fetchShortlist(extracted);
     } catch (err) {
@@ -763,6 +773,12 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
   };
 
   const answer = (field: AskableField, value: string | number) => {
+    if (field === "state" && typeof value === "string") {
+      if (typeof window !== "undefined") {
+        localStorage.setItem("rai_user_state", value);
+      }
+      setSavedStatePref(value);
+    }
     const updated: Intent = { ...(intent as Intent), [field]: value };
     setIntent(updated);
     if (qIndex < missingFields.length - 1) {
@@ -812,6 +828,24 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
           </nav>
 
           <div className="flex items-center gap-3">
+            {savedStatePref && (
+              <div className="hidden sm:inline-flex items-center gap-1.5 rounded-full border border-line bg-surface px-3 py-1 text-[12px] font-medium text-ink-muted shadow-sm">
+                <span>📍 {savedStatePref}</span>
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (typeof window !== "undefined") {
+                      localStorage.removeItem("rai_user_state");
+                    }
+                    setSavedStatePref(null);
+                  }}
+                  title="Clear saved region preference"
+                  className="ml-0.5 text-ink-soft hover:text-red-500 transition-colors"
+                >
+                  <X size={12} />
+                </button>
+              </div>
+            )}
             <StageBadge stage={stage} lang={lang} />
           </div>
         </div>
