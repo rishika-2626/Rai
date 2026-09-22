@@ -476,7 +476,7 @@ function ProductDetail({
             </div>
           )}
 
-          {item.regionalBoost > 0 && state && (
+          {(item.regionalBoost ?? 0) > 0 && state && (
             <div className="mt-4 rounded-2xl border border-orange-100 bg-gradient-to-r from-orange-50 to-amber-50 p-4">
               <div className="font-semibold text-orange-700">🇮🇳 {lang.product.regionalMatch}</div>
               <p className="mt-1 text-sm text-ink-muted">
@@ -688,6 +688,7 @@ function AskSomeoneModal({
 
 function Index() {
   const [stage, setStage] = useState<Stage>("intent");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const [intent, setIntent] = useState<Intent | null>(null);
   const [missingFields, setMissingFields] = useState<AskableField[]>([]);
@@ -741,6 +742,8 @@ function Index() {
   };
 
   const submitIntent = async (text: string) => {
+    if (isSubmitting || !text.trim()) return;
+    setIsSubmitting(true);
     setStage("questions");
     setQIndex(0);
     setBudgetInput("");
@@ -769,6 +772,8 @@ function Index() {
     } catch (err) {
       setErrorMsg((err as Error).message);
       setStage("error");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -800,6 +805,7 @@ function Index() {
     setOpenItem(null);
     setErrorMsg("");
     setStateSearch("");
+    setIsSubmitting(false);
   };
 
   return (
@@ -875,16 +881,39 @@ function Index() {
                       value={inputValue}
                       onChange={(e) => setInputValue(e.target.value)}
                       onKeyDown={(e) => {
-                        if (e.key === "Enter" && inputValue.trim()) submitIntent(inputValue.trim());
+                        if (e.key === "Enter" && inputValue.trim() && !isSubmitting) submitIntent(inputValue.trim());
                       }}
                       placeholder={lang.hero.searchPlaceholder}
                       className="flex-1 bg-transparent py-2.5 text-[14.5px] text-ink placeholder:text-ink-soft focus:outline-none"
                     />
+                    {inputValue && (
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setInputValue("");
+                          inputRef.current?.focus();
+                        }}
+                        aria-label="Clear search"
+                        className="grid h-7 w-7 shrink-0 place-items-center rounded-full text-ink-soft transition-colors hover:bg-surface-muted hover:text-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+                      >
+                        <X size={15} />
+                      </button>
+                    )}
                     <button
-                      onClick={() => inputValue.trim() && submitIntent(inputValue.trim())}
-                      className="btn-primary inline-flex shrink-0 items-center gap-1.5 rounded-full px-5 py-2.5 text-[13px] font-bold"
+                      onClick={() => inputValue.trim() && !isSubmitting && submitIntent(inputValue.trim())}
+                      disabled={isSubmitting || !inputValue.trim()}
+                      className="btn-primary inline-flex shrink-0 items-center gap-1.5 rounded-full px-5 py-2.5 text-[13px] font-bold disabled:opacity-60 disabled:cursor-not-allowed"
                     >
-                      {lang.hero.shopNow} <ArrowRight size={14} />
+                      {isSubmitting ? (
+                        <>
+                          <Loader2 size={14} className="spin shrink-0" />
+                          Finding recommendations...
+                        </>
+                      ) : (
+                        <>
+                          {lang.hero.shopNow} <ArrowRight size={14} />
+                        </>
+                      )}
                     </button>
                   </div>
 
@@ -892,8 +921,9 @@ function Index() {
                     {lang.hero.suggestions.map((s) => (
                       <button
                         key={s}
-                        onClick={() => submitIntent(s)}
-                        className="rounded-full border border-white/10 bg-white/10 px-3.5 py-1.5 text-[12px] text-white/90 backdrop-blur transition hover:border-white/25 hover:bg-white/20"
+                        onClick={() => !isSubmitting && submitIntent(s)}
+                        disabled={isSubmitting}
+                        className="rounded-full border border-white/10 bg-white/10 px-3.5 py-1.5 text-[12px] text-white/90 backdrop-blur transition hover:border-white/25 hover:bg-white/20 disabled:pointer-events-none disabled:opacity-60"
                       >
                         {s}
                       </button>
@@ -1232,7 +1262,7 @@ function Index() {
     lang={lang}
     results={results}
     onOpen={setOpenItem}
-    state={intent?.state}
+    state={intent?.state ?? undefined}
 
   />
 )}
