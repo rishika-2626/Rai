@@ -71,6 +71,38 @@
   --blush: oklch(0.95 0.04 12);
 }
 
+/* =========================
+   DARK MODE
+   ========================= */
+
+.dark {
+  --background: oklch(0.12 0.018 280);
+  --foreground: oklch(0.96 0.01 350);
+
+  --surface: oklch(0.18 0.02 280);
+  --surface-muted: oklch(0.22 0.025 280);
+
+  --ink: oklch(0.96 0.01 350);
+  --ink-muted: oklch(0.78 0.02 280);
+  --ink-soft: oklch(0.62 0.02 280);
+
+  --line: oklch(0.30 0.025 280);
+  --line-strong: oklch(0.40 0.03 280);
+
+  --primary: oklch(0.70 0.22 12);
+  --primary-foreground: oklch(0.99 0.005 350);
+
+  --primary-soft: oklch(0.27 0.08 12);
+
+  --accent: oklch(0.80 0.14 75);
+  --accent-foreground: oklch(0.18 0.03 50);
+
+  --forest: oklch(0.70 0.12 155);
+  --forest-soft: oklch(0.25 0.05 150);
+
+  --blush: oklch(0.25 0.06 12);
+}
+
 @theme inline {
   --color-primary-soft: var(--primary-soft);
 }
@@ -107,6 +139,83 @@
   }
 }
 
+/* =========================
+   DARK MODE CONTRAST FIXES
+   ========================= */
+
+.dark .glass {
+  background: oklch(0.14 0.018 280 / 0.88);
+  backdrop-filter: blur(16px) saturate(1.3);
+  -webkit-backdrop-filter: blur(16px) saturate(1.3);
+}
+
+.dark .page-bg {
+  background-image:
+    radial-gradient(
+      ellipse 80% 50% at 50% -20%,
+      oklch(0.28 0.08 12 / 0.28),
+      transparent
+    ),
+    radial-gradient(
+      ellipse 60% 40% at 100% 0%,
+      oklch(0.28 0.06 75 / 0.12),
+      transparent
+    );
+}
+
+/* Product-card heart button */
+.dark .bg-white\/95 {
+  background-color: oklch(0.20 0.02 280 / 0.95);
+  color: var(--color-ink);
+}
+
+/* Product-card ValueIQ badge */
+.dark .bg-ink\/85 {
+  background-color: oklch(0.20 0.025 280 / 0.95);
+  color: var(--color-ink);
+}
+
+/* Badge contrast */
+.dark .bg-green-100 {
+  background-color: oklch(0.25 0.06 150);
+  color: oklch(0.82 0.12 150);
+}
+
+.dark .bg-yellow-100 {
+  background-color: oklch(0.25 0.06 80);
+  color: oklch(0.88 0.13 80);
+}
+
+.dark .bg-blue-100 {
+  background-color: oklch(0.24 0.06 250);
+  color: oklch(0.82 0.10 250);
+}
+
+.dark .bg-purple-100 {
+  background-color: oklch(0.25 0.06 300);
+  color: oklch(0.84 0.10 300);
+}
+
+.dark .bg-orange-100 {
+  background-color: oklch(0.25 0.06 55);
+  color: oklch(0.86 0.12 55);
+}
+
+.dark .bg-emerald-100 {
+  background-color: oklch(0.24 0.06 160);
+  color: oklch(0.82 0.12 160);
+}
+
+.dark .bg-slate-100 {
+  background-color: oklch(0.25 0.02 280);
+  color: oklch(0.82 0.02 280);
+}
+
+.dark .bg-cyan-100 {
+  background-color: oklch(0.24 0.06 210);
+  color: oklch(0.82 0.10 210);
+}
+
 @utility font-display {
   font-family: var(--font-display);
   font-optical-sizing: auto;
@@ -118,12 +227,17 @@
 }
 
 @utility hairline {
-  background-image: linear-gradient(to right, var(--color-line-strong) 50%, transparent 50%);
+  background-image: linear-gradient(
+    to right,
+    var(--color-line-strong) 50%,
+    transparent 50%
+  );
   background-size: 6px 1px;
   background-repeat: repeat-x;
 }
 
 /* Animations */
+
 @keyframes rai-spin {
   to {
     transform: rotate(360deg);
@@ -135,6 +249,7 @@
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: none;
@@ -146,6 +261,7 @@
     opacity: 0;
     transform: translateY(24px);
   }
+
   to {
     opacity: 1;
     transform: none;
@@ -157,6 +273,7 @@
     opacity: 0;
     transform: scale(0.96);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -168,6 +285,7 @@
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-12px);
   }
@@ -177,6 +295,7 @@
   0% {
     background-position: -200% 0;
   }
+
   100% {
     background-position: 200% 0;
   }
@@ -187,6 +306,7 @@
   100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.55;
   }
@@ -199,6 +319,7 @@
     transform: scale(0.6);
     opacity: 0.4;
   }
+
   40% {
     transform: scale(1);
     opacity: 1;
@@ -242,8 +363,16 @@
 
 @utility page-bg {
   background-image:
-    radial-gradient(ellipse 80% 50% at 50% -20%, oklch(0.94 0.06 12 / 0.5), transparent),
-    radial-gradient(ellipse 60% 40% at 100% 0%, oklch(0.95 0.04 75 / 0.3), transparent);
+    radial-gradient(
+      ellipse 80% 50% at 50% -20%,
+      oklch(0.94 0.06 12 / 0.5),
+      transparent
+    ),
+    radial-gradient(
+      ellipse 60% 40% at 100% 0%,
+      oklch(0.95 0.04 75 / 0.3),
+      transparent
+    );
 }
 
 @utility glass {
@@ -285,9 +414,22 @@
 
 @utility hero-gradient {
   background:
-    radial-gradient(ellipse 120% 80% at 0% 0%, oklch(1 0 0 / 0.12), transparent 50%),
-    radial-gradient(ellipse 80% 60% at 100% 100%, oklch(0.78 0.14 75 / 0.15), transparent 50%),
-    linear-gradient(135deg, oklch(0.58 0.26 12) 0%, oklch(0.64 0.24 12) 45%, oklch(0.55 0.22 8) 100%);
+    radial-gradient(
+      ellipse 120% 80% at 0% 0%,
+      oklch(1 0 0 / 0.12),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse 80% 60% at 100% 100%,
+      oklch(0.78 0.14 75 / 0.15),
+      transparent 50%
+    ),
+    linear-gradient(
+      135deg,
+      oklch(0.58 0.26 12) 0%,
+      oklch(0.64 0.24 12) 45%,
+      oklch(0.55 0.22 8) 100%
+    );
 }
 
 .loading-dot {

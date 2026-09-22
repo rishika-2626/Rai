@@ -6,6 +6,8 @@ import {
   Check,
   Heart,
   Loader2,
+  Moon,
+  Sun,
   MessageCircle,
   Search,
   Share2,
@@ -688,6 +690,7 @@ function AskSomeoneModal({
 
 function Index() {
   const [stage, setStage] = useState<Stage>("intent");
+  const [darkMode, setDarkMode] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const [intent, setIntent] = useState<Intent | null>(null);
   const [missingFields, setMissingFields] = useState<AskableField[]>([]);
@@ -711,6 +714,21 @@ function Index() {
   useEffect(() => {
     api.health().then(setHealth).catch(() => setHealth({ ok: false }));
   }, []);
+    useEffect(() => {
+    const savedTheme = localStorage.getItem("rai-theme");
+    const isDark = savedTheme === "dark";
+
+    setDarkMode(isDark);
+    document.documentElement.classList.toggle("dark", isDark);
+  }, []);
+
+  const toggleTheme = () => {
+    const nextTheme = !darkMode;
+
+    setDarkMode(nextTheme);
+    localStorage.setItem("rai-theme", nextTheme ? "dark" : "light");
+    document.documentElement.classList.toggle("dark", nextTheme);
+  };
 
   useEffect(() => {
     if (stage === "intent") inputRef.current?.focus();
@@ -812,8 +830,17 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
           </nav>
 
           <div className="flex items-center gap-3">
-            <StageBadge stage={stage} lang={lang} />
-          </div>
+  <button
+    onClick={toggleTheme}
+    aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
+    title={darkMode ? "Switch to light mode" : "Switch to dark mode"}
+    className="grid h-9 w-9 place-items-center rounded-full border border-line bg-surface text-ink transition-all hover:border-primary hover:bg-primary-soft hover:text-primary"
+  >
+    {darkMode ? <Sun size={17} /> : <Moon size={17} />}
+  </button>
+
+  <StageBadge stage={stage} lang={lang} />
+</div>
         </div>
       </header>
 
@@ -1173,13 +1200,17 @@ if (!extracted.state || (extracted.confidence ?? 0) < 0.85) {
                   )}
                 </span>
               </div>
-              <div className="flex items-center gap-2 rounded-full border border-amber-100 bg-amber-50 px-4 py-2">
+              <div className="flex items-center gap-2 rounded-full border border-amber-100 bg-amber-50 px-4 py-2 dark:border-amber-900/60 dark:bg-amber-950/50">
                 <span>⭐</span>
-                <span className="text-sm font-semibold">{lang.shelf.popularityIgnored}</span>
+                <span className="text-sm font-semibold text-amber-700 dark:text-amber-300">
+  {lang.shelf.popularityIgnored}
+</span>
               </div>
-              <div className="flex items-center gap-2 rounded-full border border-green-100 bg-green-50 px-4 py-2">
+              <div className="flex items-center gap-2 rounded-full border border-green-100 bg-green-50 px-4 py-2 dark:border-green-900/60 dark:bg-green-950/50">
                 <span>✔</span>
-                <span className="text-sm font-semibold">{lang.shelf.explainableRanking}</span>
+                <span className="text-sm font-semibold text-green-700 dark:text-green-300">
+  {lang.shelf.explainableRanking}
+</span>
               </div>
             </div>
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
