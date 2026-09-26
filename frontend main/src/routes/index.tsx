@@ -708,13 +708,30 @@ function Index() {
   const [health, setHealth] = useState<Awaited<ReturnType<typeof api.health>> | null>(null);
   const [activeCat, setActiveCat] = useState("All");
   const [savedStatePref, setSavedStatePref] = useState<string | null>(null);
+  const [showScrollTop, setShowScrollTop] = useState(false);
   const inputRef = useRef<HTMLInputElement | null>(null);
   const lang = getText(intent?.language);
   const currentQuestionSet = getQuestionSet(intent, lang);
   const filteredStates = INDIAN_STATES.filter((state) =>
   state.toLowerCase().includes(stateSearch.toLowerCase())
 );
+  useEffect(() => {
+  const handleScroll = () => {
+    setShowScrollTop(window.scrollY > 300);
+  };
 
+  window.addEventListener("scroll", handleScroll);
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
+  const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
   useEffect(() => {
     api.health().then(setHealth).catch(() => setHealth({ ok: false }));
     if (typeof window !== "undefined") {
@@ -1274,6 +1291,16 @@ function Index() {
       </footer>
 
       {askModal && <AskSomeoneModal item={askModal} onClose={() => setAskModal(null)} lang={lang} />}
+      {showScrollTop && (
+  <button
+    onClick={scrollToTop}
+    aria-label="Scroll to top"
+    title="Scroll to top"
+    className="fixed bottom-6 right-6 z-50 grid h-11 w-11 place-items-center rounded-full bg-primary text-primary-foreground shadow-lg transition-all hover:scale-105 hover:opacity-90"
+  >
+    ↑
+  </button>
+)}
     </div>
   );
 }
