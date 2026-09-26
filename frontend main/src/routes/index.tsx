@@ -1,6 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from "@clerk/clerk-react";
+import {
   ArrowLeft,
   ArrowRight,
   Check,
@@ -828,6 +834,19 @@ function Index() {
           </nav>
 
           <div className="flex items-center gap-3">
+            {/* 🔐 Clerk Auth Buttons pasted here */}
+            <SignedOut>
+              <SignInButton mode="modal">
+                <button className="btn-primary rounded-xl px-4 py-2 text-xs font-bold transition">
+                  Sign In
+                </button>
+              </SignInButton>
+            </SignedOut>
+
+            <SignedIn>
+              <UserButton afterSignOutUrl="/" />
+            </SignedIn>
+
             {savedStatePref && (
               <div className="hidden sm:inline-flex items-center gap-1.5 rounded-full border border-line bg-surface px-3 py-1 text-[12px] font-medium text-ink-muted shadow-sm">
                 <span>📍 {savedStatePref}</span>
