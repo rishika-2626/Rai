@@ -62,7 +62,8 @@ const OCCASION_KEYWORDS = {
 };
 
 function fallbackExtractIntent(message) {
-  const lower = message.toLowerCase();
+  const safeMessage = typeof message === "string" ? message.trim() : "";
+  const lower = safeMessage.toLowerCase();
   let occasion = null;
   for (const key in OCCASION_KEYWORDS) {
     if (lower.includes(key)) {
@@ -72,25 +73,28 @@ function fallbackExtractIntent(message) {
   }
   const budgetMatch = lower.match(/(\d{3,5})/);
   const budget = budgetMatch ? parseInt(budgetMatch[1], 10) : null;
-  const stateGuess = inferStateFromQuery(message);
+  const stateGuess = inferStateFromQuery(safeMessage);
 
-return {
+  return {
     occasion,
     budget,
     priority: null,
     productType: null,
 
     language: "English",
-    translatedQuery: message,
+    translatedQuery: safeMessage,
 
     state: stateGuess.state,
     confidence: stateGuess.confidence,
     source: "fallback-heuristic",
-};
+  };
 }
 
 async function extractIntent(message) {
-  if (!hasApiKey()) return fallbackExtractIntent(message);
+  const safeMessage = typeof message === "string" ? message.trim().slice(0, 500) : "";
+  if (!safeMessage) return fallbackExtractIntent("");
+
+  if (!hasApiKey()) return fallbackExtractIntent(safeMessage);
 
   const system = `
 You extract shopping intent for an Indian fashion shopping assistant.
@@ -182,27 +186,26 @@ Translate the entire shopping request into natural English while preserving the 
 Return ONLY JSON.
 `;
   try {
-    const raw = await callClaude(system, message);
+    const raw = await callClaude(system, safeMessage);
     const parsed = extractJson(raw);
-    const stateGuess = inferStateFromQuery(message);
+    const stateGuess = inferStateFromQuery(safeMessage);
 
-return {
-    occasion: parsed.occasion ?? null,
-    budget: parsed.budget ?? null,
-    priority: parsed.priority ?? null,
-    productType: parsed.productType ?? null,
+    return {
+      occasion: parsed.occasion ?? null,
+      budget: typeof parsed.budget === "number" ? parsed.budget : null,
+      priority: parsed.priority ?? null,
+      productType: parsed.productType ?? null,
 
-    language: parsed.language ?? "English",
-    translatedQuery: parsed.translatedQuery ?? message,
+      language: parsed.language ?? "English",
+      translatedQuery: parsed.translatedQuery ?? safeMessage,
 
-    state: parsed.state ?? (stateGuess.confidence >= 0.85 ? stateGuess.state : null),
-    confidence:
-    stateGuess.confidence,
-    source: "llm"
-};
+      state: parsed.state ?? (stateGuess.confidence >= 0.85 ? stateGuess.state : null),
+      confidence: stateGuess.confidence,
+      source: "llm",
+    };
   } catch (err) {
-    console.error("extractIntent LLM call failed, falling back:", err.message);
-    return fallbackExtractIntent(message);
+    console.error("extractIntent LLM call failed, falling back gracefully:", err.message);
+    return fallbackExtractIntent(safeMessage);
   }
 }
 

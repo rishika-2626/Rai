@@ -25,14 +25,18 @@ router.get("/model-info", (req, res) => {
 // priority — from free-text. It never ranks products; scoring is 100%
 // deterministic and happens in the Worth It Engine below.
 router.post("/intent", async (req, res) => {
-  const { message } = req.body;
-  if (!message || typeof message !== "string") {
-    return res.status(400).json({ error: "message (string) is required" });
+  const { message } = req.body || {};
+  if (!message || typeof message !== "string" || message.trim().length === 0) {
+    return res.status(400).json({ error: "message (non-empty string) is required" });
   }
+
+  const sanitizedMessage = message.trim().slice(0, 500);
+
   try {
-    const intent = await extractIntent(message);
+    const intent = await extractIntent(sanitizedMessage);
     res.json(intent);
   } catch (err) {
+    console.error("Intent extraction API error:", err);
     res.status(500).json({ error: "Failed to extract intent", detail: err.message });
   }
 });
