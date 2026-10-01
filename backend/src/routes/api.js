@@ -7,6 +7,7 @@ const { rankCatalog, selectDiverseTop, topContributions, modelMetadata } = requi
 const { getReviewFeatures } = require("../services/reviewFeatures");
 const { buildExplanation } = require("../services/explanationAssembly");
 const { createShare, getShare } = require("../services/askSomeone");
+const User = require("../models/User"); // 💥 MongoDB User Model Import
 
 const router = express.Router();
 const regionalStyles = require("../data/regionalStyles.json");
@@ -181,6 +182,27 @@ router.get("/ask-someone/:id", (req, res) => {
   const share = getShare(req.params.id);
   if (!share) return res.status(404).json({ error: "share not found" });
   res.json(share);
+});
+
+// POST /api/history - Search history database (MongoDB) me save karne ke liye
+router.post("/history", async (req, res) => {
+  try {
+    const { query, resultsCount, timestamp } = req.body || {};
+
+    console.log("Saving Search History to DB:", { query, resultsCount, timestamp });
+
+    // Active user ke document me searchHistory push karna
+    await User.findOneAndUpdate(
+      {}, 
+      { $push: { searchHistory: { query, resultsCount, timestamp: timestamp || new Date() } } },
+      { sort: { createdAt: -1 } }
+    );
+
+    return res.status(200).json({ success: true, message: "History saved to database successfully" });
+  } catch (error) {
+    console.error("Error saving search history:", error);
+    return res.status(500).json({ success: false, error: "Internal Server Error" });
+  }
 });
 
 module.exports = router;

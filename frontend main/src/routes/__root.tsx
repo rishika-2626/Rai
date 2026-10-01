@@ -8,9 +8,13 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
+import { ClerkProvider } from "@clerk/clerk-react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { useSyncUser } from "../hooks/useSyncUser"; // <-- New Hook Import
+
+const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
 function NotFoundComponent() {
   return (
@@ -42,7 +46,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   return (
     <div className="page-bg flex min-h-screen items-center justify-center px-4">
       <div className="max-w-md text-center fade-up">
-        <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-primary-soft text-2xl">⚠️</div>
+        <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-primary-soft text-2xl">⚠️️</div>
         <h1 className="font-display text-xl text-ink">This page didn't load</h1>
         <p className="mt-2 text-sm text-ink-muted">
           Something went wrong on our end. You can try refreshing or head back home.
@@ -107,13 +111,21 @@ function RootShell({ children }: { children: ReactNode }) {
   );
 }
 
+// Inner helper component so hook runs safely inside ClerkProvider
+function UserSyncHelper() {
+  useSyncUser();
+  return null;
+}
+
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
   return (
-    <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
-    </QueryClientProvider>
+    <ClerkProvider publishableKey={PUBLISHABLE_KEY || ""}>
+      <UserSyncHelper />
+      <QueryClientProvider client={queryClient}>
+        <Outlet />
+      </QueryClientProvider>
+    </ClerkProvider>
   );
 }
