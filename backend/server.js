@@ -3,9 +3,14 @@ const express = require("express");
 const cors = require("cors");
 const rateLimit = require("express-rate-limit");
 const apiRoutes = require("./src/routes/api");
+const userRoutes = require("./src/routes/user"); // New Phase 2 User Routes
+const connectDB = require("./src/db");           // New Phase 2 DB Connection
 const { hasApiKey } = require("./src/services/llm");
 
 const app = express();
+
+// Connect MongoDB Database
+connectDB();
 
 // Rate-limit the API so the server-side Gemini key can't be drained by an
 // open proxy. Tunable via env; defaults to 30 requests/minute per IP.
@@ -19,7 +24,12 @@ const apiLimiter = rateLimit({
 
 app.use(cors());
 app.use(express.json());
+
+// Existing Gemini / AI API Routes
 app.use("/api", apiLimiter, apiRoutes);
+
+// New Phase 2 Clerk Auth & User Data Sync Routes
+app.use("/api/user", userRoutes);
 
 const PORT = process.env.PORT || 4000;
 

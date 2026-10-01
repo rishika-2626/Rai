@@ -1,3 +1,4 @@
+import { SignedIn, SignedOut, SignInButton, UserButton, useAuth } from "@clerk/clerk-react";
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import {
@@ -44,6 +45,34 @@ export const Route = createFileRoute("/")({
   }),
   component: Index,
 });
+
+function AuthHeaderButtons() {
+  const { isLoaded } = useAuth();
+
+  if (!isLoaded) {
+    return (
+      <button className="rounded-full bg-primary px-4 py-2 text-sm font-bold text-white opacity-80 cursor-wait">
+        Sign In
+      </button>
+    );
+  }
+
+  return (
+    <>
+      <SignedOut>
+        <SignInButton mode="modal">
+          <button className="rounded-full bg-primary px-4 py-2 text-sm font-bold text-white transition hover:bg-primary/90">
+            Sign In
+          </button>
+        </SignInButton>
+      </SignedOut>
+
+      <SignedIn>
+        <UserButton afterSignOutUrl="/" />
+      </SignedIn>
+    </>
+  );
+}
 
 type Stage = "intent" | "questions" | "loading" | "shelf" | "error";
 type AskableField = "priority" | "budget" | "state";
@@ -749,14 +778,21 @@ function Index() {
     try {
       const { results, scanned, totalScanned, productsScanned } = await api.getShortlist({
         occasion: finalIntent.occasion,
-    budget: finalIntent.budget,
-    priority: finalIntent.priority,
-    productType: finalIntent.productType,
-    state: finalIntent.state,
+        budget: finalIntent.budget,
+        priority: finalIntent.priority,
+        productType: finalIntent.productType,
+        state: finalIntent.state,
       });
       setResults(results);
       setScanned(scanned ?? totalScanned ?? productsScanned ?? null);
       setStage("shelf");
+
+      // 💥 Search history save logic
+      if (inputValue.trim()) {
+        api.saveSearchHistory(inputValue.trim(), results.length).catch((err) => {
+          console.error("Failed to save search history:", err);
+        });
+      }
     } catch (err) {
       setErrorMsg((err as Error).message);
       setStage("error");
@@ -841,14 +877,18 @@ function Index() {
             </div>
           </button>
 
-          <nav className="hidden md:flex">
-            <button
-              onClick={() => document.getElementById("how-it-works")?.scrollIntoView({ behavior: "smooth" })}
-              className="rounded-full px-4 py-2 text-sm font-semibold text-ink-muted transition hover:bg-primary-soft/60 hover:text-primary"
-            >
-              {lang.nav.howItWorks}
-            </button>
-          </nav>
+          
+
+          <nav className="hidden md:flex items-center gap-2">
+  <button
+    onClick={() => document.getElementById("how-it-works")?.scrollIntoView({ behavior: "smooth" })}
+    className="rounded-full px-4 py-2 text-sm font-semibold text-ink-muted transition hover:bg-primary-soft/60 hover:text-primary"
+  >
+    {lang.nav.howItWorks}
+  </button>
+
+  <AuthHeaderButtons />
+</nav>
 
           <div className="flex items-center gap-3">
             {/* 🔐 Clerk Auth Buttons pasted here */}
