@@ -16,6 +16,8 @@ import { useSyncUser } from "../hooks/useSyncUser"; // <-- New Hook Import
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
+const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY || "pk_test_c2hhcmluZy1mYXduLTg5NDEuY2xlcmsuYWNjb3VudHMuZGV2JA";
+
 function NotFoundComponent() {
   return (
     <div className="page-bg flex min-h-screen items-center justify-center px-4">
@@ -121,8 +123,12 @@ function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
   return (
+    feat/clerk-auth-phase2
     <ClerkProvider publishableKey={PUBLISHABLE_KEY || ""}>
       <UserSyncHelper />
+
+    <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
+ main
       <QueryClientProvider client={queryClient}>
         <Outlet />
       </QueryClientProvider>
