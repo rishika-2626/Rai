@@ -429,9 +429,10 @@ function ProductDetail({
     lang: ReturnType<typeof getText>;
     results: Product[];
     onOpen: (p: Product) => void;
-    state?: string;
+    state?: string | null;
 }) {
   const similarProducts = getSimilarProducts(item, results);
+  const hasRegionalBoost = (item.regionalBoost ?? 0) > 0;
   return (
     <div className="mx-auto max-w-4xl fade-up">
       <button
@@ -482,7 +483,7 @@ function ProductDetail({
             </div>
           )}
 
-          {item.regionalBoost > 0 && state && (
+          {hasRegionalBoost && state && (
             <div className="mt-4 rounded-2xl border border-orange-100 bg-gradient-to-r from-orange-50 to-amber-50 p-4">
               <div className="font-semibold text-orange-700">🇮🇳 {lang.product.regionalMatch}</div>
               <p className="mt-1 text-sm text-ink-muted">
@@ -916,6 +917,20 @@ function Index() {
                       placeholder={lang.hero.searchPlaceholder}
                       className="flex-1 bg-transparent py-2.5 text-[14.5px] text-ink placeholder:text-ink-soft focus:outline-none"
                     />
+                    {inputValue && (
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setInputValue("");
+                          inputRef.current?.focus();
+                        }}
+                        aria-label="Clear search"
+                        title="Clear search"
+                        className="grid h-8 w-8 shrink-0 place-items-center rounded-full text-ink-soft transition hover:bg-primary-soft/60 hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+                      >
+                        <X size={14} />
+                      </button>
+                    )}
                     <button
                       onClick={() => inputValue.trim() && submitIntent(inputValue.trim())}
                       className="btn-primary inline-flex shrink-0 items-center gap-1.5 rounded-full px-5 py-2.5 text-[13px] font-bold"
